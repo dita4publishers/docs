@@ -1,4 +1,5 @@
-docs
-====
+DITA4Publishers main documentation
+==================================
 
-Master documentation project for DITA for Publishers
+The documentation is under migration at this moment.
+
