@@ -13,7 +13,14 @@ cd $D4P_DIR
 git checkout doc-engine
 git pull
 git submodule update --init --recursive
-bash travis/doc-engine-install.sh
+
+echo "Listing Directory"
+ls .
+
+cd travis
+ls .
+
+bash ./doc-engine-install.sh
 cd
 
 # list to confirm we are on the right repo
