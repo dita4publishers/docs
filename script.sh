@@ -14,14 +14,7 @@ git checkout doc-engine
 git pull
 git submodule update --init --recursive
 
-echo "Listing Directory"
-ls .
-
-cd travis
-ls .
-
-bash ./doc-engine-install.sh
-cd
+bash ./travis/doc-engine-install.sh
 
 # list to confirm we are on the right repo
 echo "Listing Directory"
