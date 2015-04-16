@@ -1,0 +1,4 @@
+[submodule "docs/repo/org.example.d4p.word2ditaextension"]
+	path = docs/repo/org.example.d4p.word2ditaextension
+	url = https://github.com/dita4publishers/org.example.d4p.word2ditaextension.git
+	branch = documentation
