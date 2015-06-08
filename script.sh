@@ -23,7 +23,9 @@ ls .
 
 echo "Building documentation"
 # must find a way to set DITA_DIR env variable from doc-engine-install.sh
-ant -f DITA-OT1.8.5/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR
+ant -f DITA-OT1.8.5/integrator.xml
+ant -f DITA-OT1.8.5/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR -Dtranstype=d4p-html5
+
 
 echo "Add documentation to repo"
 cd ~/$OUTDIR
