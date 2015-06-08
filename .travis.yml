@@ -6,12 +6,12 @@ jdk:
 env:
   global:
   - GH_REF: github.com/dita4publishers/docs
-  - BRANCH: master
   - DOC_DIR: docs
+  - BRANCH: master
   - WEBSITE_DOC_MAP: docs/user_docs/d4p-users-guide.ditamap
   - D4P_REPO: https://github.com/dita4publishers/dita4publishers.git
   - D4P_DIR: dita4publishers
-  - secure: 'to be filled later'
+  - secure: "lLc0UVPtc7jdo2QPsc/SSQgdhmYIdQ3alkXjQttIUYC+T3S+8ol7DtBqQZ6jWLOxhVIwfFz4fNf/NtmnME/Yf304Q+KWcQE2NXyKwII/9r994QIeHTyOR5pYdCHUIs/oLbDUIg7bssgJFpqBAqJPBvs6nJCIzhHIR3sFEIoiCRo="
 
 script: bash ./script.sh
 

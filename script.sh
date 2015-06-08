@@ -2,7 +2,8 @@
 set -e # exit with nonzero exit code if anything fails
 
 OUTDIR=OUT
-# list to confirm we are on the right repo
+
+
 echo "Listing Directory"
 ls .
 git checkout $BRANCH
@@ -22,13 +23,38 @@ echo "testing env: DITADIR is $DITA_DIR/"
 echo "Building documentation"
 
 ant -f $DITA_DIR/integrator.xml
-ant -f $DITA_DIR/build.xml -Dargs.input=$TRAVIS_BUILD_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR -Dtranstype=d4p-html5
+ant -f $DITA_DIR/build.xml -Dargs.input=$TRAVIS_BUILD_DIR/$WEBSITE_DOC_MAP -Doutput.dir=$OUTDIR -Dtranstype=d4p-html5
 
-echo "Add documentation to repo"
-cd ~/$OUTDIR
-ls .
+
+
+# clone dir
+echo "Cloning repo and adding files to gh-pages branch"
+cd 
+git clone https://${GH_TOKEN}@${GH_REF}
+cd $DOC_DIR
+git checkout gh-pages
+
+# copy files
+cp -r $DOC_ENGINE_DIR/$DITA_DIR/$OUTDIR/* ./
+
+# inside this git repo we'll pretend to be a new user
+echo "git config"
+git config user.name "Travis CI"
+git config user.email "travis@dita4publishers.com"
+
+# The first and only commit to this new Git repo contains all the
+# files present with the commit message "Deploy to GitHub Pages".
+echo "add files to repo"
+git add -A
 
 echo "commit"
-#git commit -m "Deploy Documentation"
+git commit -m "Deploy test"
+
+# Force push from the current repo's master branch to the remote
+# repo's gh-pages branch. (All previous history on the gh-pages branch
+# will be lost, since we are overwriting it.) We redirect any output to
+# /dev/null to hide any sensitive credential data that might otherwise be exposed.
+echo "push"
+git push  > /dev/null 2>&1
 
 
