@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
+OUTDIR=OUT
 # list to confirm we are on the right repo
 echo "Listing Directory"
 ls .
@@ -21,10 +22,11 @@ echo "Listing Directory"
 ls .
 
 echo "Building documentation"
-#
+ant -f $DITA_DIR/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR
 
 echo "Add documentation to repo"
-#git add -A
+cd ~/$OUTDIR
+ls .
 
 echo "commit"
 #git commit -m "Deploy Documentation"

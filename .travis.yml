@@ -8,6 +8,7 @@ env:
   - GH_REF: github.com/dita4publishers/docs
   - BRANCH: master
   - DOC_DIR: docs
+  - WEBSITE_DOC_MAP: docs/user_docs/d4p-users-guide.ditamap
   - D4P_REPO: https://github.com/dita4publishers/dita4publishers.git
   - D4P_DIR: dita4publishers
   - secure: 'to be filled later'
