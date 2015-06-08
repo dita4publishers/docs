@@ -23,6 +23,7 @@ ls .
 
 echo "Building documentation"
 # must find a way to set DITA_DIR env variable from doc-engine-install.sh
+bash DITA-OT1.8.5/startcmd.sh
 ant -f DITA-OT1.8.5/integrator.xml
 ant -f DITA-OT1.8.5/build.xml -Dargs.input=$TRAVIS_BUILD_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR -Dtranstype=d4p-html5
 
