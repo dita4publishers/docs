@@ -22,6 +22,7 @@ echo "Listing Directory"
 ls .
 
 echo "Building documentation"
+echo "$DITA_DIR/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR"
 ant -f $DITA_DIR/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR
 
 echo "Add documentation to repo"
