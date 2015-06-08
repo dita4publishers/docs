@@ -1,0 +1,157 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Release Notes: Version 0.9.19RC12</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="schema.DC" href="http://purl.org/dc/terms/"><meta name="DC.Type" content="concept"><meta name="DC.Title" content="Release Notes: Version 0.9.19RC12"><meta name="abstract" content="Version 0.9.19 (Under development)"><meta name="description" content="Version 0.9.19 (Under development)"><meta name="DC.subject" content=", release notes, Version 0.9.19"><meta name="keywords" content=", release notes, Version 0.9.19"><meta name="DC.Relation" scheme="URI" content="release-notes.html"><meta name="prodname" content="DITA For Publishers"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0RC07"><meta name="DC.Creator" content="W. Eliot Kimber"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="conceptId"><script type="text/javascript">var d4p = {"relativePath":"..\/..\/","dev":false,"debug":false,"draft":false,"nextTopicHref":"d4p-users-guide\/release-notes\/release-notes-0.9.18.html","previousTopicHref":"d4p-users-guide\/release-notes\/release-notes-1.0.0.html","root":false,"topic":{"chunked":""},"map":{"title":"  DITA For Publishers User Guide  ","chunked":false},"search":{"minlength":2},"l":{"searchPageHeading":"Search Results","close":"Close"}}</script><link rel="stylesheet" type="text/css" media="screen, projection" href="../../themes/dita-d4p-classic/css/style.css"><link rel="stylesheet" type="text/css" media="screen, projection, print" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><script type="text/javascript">
+      
+        d4p.cssGridPath = d4p.dev ? 'html5-themes/modules/960-Responsive-Grid/css/' : 'themes/dita-d4p-classic/css/';
+        var ADAPT_CONFIG = {
+          // Where is your CSS?
+          path: d4p.relativePath + d4p.cssGridPath,
+          
+          // false = Only run once, when page first loads.
+          // true = Change on window resize and page tilt.
+          dynamic: true,
+          
+          // Optional callback... myCallback(i, width)
+          callback: doc_resize,
+          
+          // First range entry is the minimum.
+          // Last range entry is the maximum.
+          // Separate ranges by "to" keyword.
+          range: [
+             // small (size-0)
+            '0px    to 760px  = mobile.css',
+             // medium (size-1, size-2)
+            '760px  to 980px  = 720.css',
+            '980px  to 1270px = 960.css',
+             // large (size-3, size-5)
+            '1270px to 1600px = 1200.css',
+            '1600px to 1940px = 1560.css',
+             // extra large (size-6)
+            '1940px to 2540px = 1920.css',
+            '2540px           = 2520.css'
+          ]
+        };
+
+        function doc_resize(i, width)
+        {
+          d4p.setBodyClassfunction(i, width);
+        }
+
+
+        
+      </script><script type="text/javascript" src="../../themes/dita-d4p-classic/js/script.js"></script></head><body class="en-us dita-d4p-classic centered navigation-default"><div id="d4h5-main-container" class="container_12" role="application"><ul id="page-links" class="hidden"><li><a id="skip-to-content" href="#d4h5-main-content">Skip to content</a></li><li><a id="skip-to-localnav" href="#local-navigation">Skip to navigation</a></li><li><a id="skip-to-footer" href="#footer">Skip to footer</a></li></ul><header role="banner" aria-labelledby="publication-title" class="hide-for-small"><div class="grid_8"><h1 id="publication-title">  DITA For Publishers User Guide  </h1></div><section class="grid_4 search-box"><form id="search" role="search"><div class="form-group"><input id="search-text" type="text" autocomplete="off" class="form-control" placeholder="Search"></div></form></section><secion class="clearfix"></secion></header><div id="d4h5-section-container" class="grid_12"><nav id="local-navigation" class="grid_4 alpha omega" role="navigation" aria-label="Main navigation"><div id="nav-content"><ul><li><a href="../../index.html">Table of Contents</a></li><li><a href="../frontmatter/coverpage.html">DITA For Publishers User Guide</a></li><li><a href="../topics/about-this-book.html">About This Book</a></li><li class="collapsible active"><a href="release-notes.html">Release Notes</a><ul><li><a href="release-notes-1.0.0.html">Release Notes: Version 1.0.0RC00 (github version)</a></li><li class=" active"><a href="release-notes-0.9.19.html" class=" selected">Release Notes: Version 0.9.19RC12</a></li><li><a href="release-notes-0.9.18.html">Release Notes: Version 0.9.18</a></li><li><a href="release-notes-0.9.16.html">Release Notes: Version 0.9.16</a></li><li><a href="release-notes-0.9.15.html">Release Notes: Version 0.9.15</a></li><li><a href="release-notes-0.9.14.html">Release Notes: Version 0.9.14</a></li><li><a href="release-notes-0.9.13.html">Release Notes: Version 0.9.13</a></li><li><a href="release-notes-0.9.12.html">Release Notes: Version 0.9.12</a></li><li><a href="release-notes-0.9.11.html">Release Notes: Version 0.9.11</a></li><li><a href="release-notes-0.9.10.html">Release Notes: Version 0.9.10</a></li><li><a href="release-notes-0.9.9.html">Release Notes: Version 0.9.9</a></li></ul></li><li><a href="../topics/intro-to-d4p.html"><span class="enumeration enumeration0">Chapter&nbsp;1. </span>Introduction to DITA For Publishers</a></li><li class="collapsible collapsed"><a href="../introduction-chapter.html"><span class="enumeration enumeration0">Part&nbsp;I. </span>The DITA For Publishers Open Toolkit Plugins</a><ul><li><a href="../tasks/plugin-installation.html"><span class="enumeration enumeration1">Chapter&nbsp;2. </span>Installing the Toolkit Plugins</a></li></ul></li><li><a href="../backmatter/colophon.html">Colophon</a></li><li><a href="../../generated-index.html">Index</a></li></ul></div></nav><div id="d4h5-main-content" class="grid_8 alpha omega"><article><nav id="content-toolbar" class="toolbar hide-for-small"><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="release-notes.html" title="Release Notes"><span class="fi fi-arrow-up"></span><span class="screen-reader">Release Notes</span></a></div></div></nav><section id="page"><div class="page concept    topic topic concept concept "><a name="conceptId" id="conceptId" class="anchor"></a>
+ <h1 class="title topictitle1">Release Notes: Version 0.9.19RC12</h1>
+ 
+  
+ <div class="body conbody"><p class="shortdesc">Version 0.9.19 (Under development)</p>
+    <div class="section" id="conceptId-d1229e40_section"><a name="conceptId-d1229e40" id="conceptId-d1229e40" class="anchor"></a><h2 class="title sectiontitle">Theme for the Release</h2>
+      
+      <p class="p">The 0.9.19 release is primarily about finishing out and generalizing
+        the map-based processing used in the EPUB, Kindle, HTML2, and HTML5
+        transforms.</p>
+      <p class="p">The transforms should work with the 1.6, 1.7, and 1.8 versions of the Open Toolkit.</p>
+      <p class="p">There is the start of vocabulary reference document, developed by Steven Calderwood of Human Kinetics.</p>
+      <p class="p">Significant improvements to Word-to-DITA transformation framework. The markup for style-to-tag maps has been enhanced to be more complete and hopefully easier to work with. A migration utility is provided in <span class="ph filepath">org.dita4publishers.word2dita/utils/style2tagmapMigrator.xsl</span>. It should produce working style-to-tag maps from most existing style-to-tag maps. A few may require manual adjustment, especially if you are trying to generate maps and topics at the same time.</p>
+      <p class="p">The release also includes additions and refinements to the vocabulary,
+        numerous bug fixes and whatnot.</p>
+    </div>
+    <div class="section" id="conceptId-d1229e65_section"><a name="conceptId-d1229e65" id="conceptId-d1229e65" class="anchor"></a><h2 class="title sectiontitle">Word to DITA</h2>
+      
+      <p class="p">New features:</p>
+      <ul class="ul" id="conceptId__ul_pw2_lh2_q4">
+        <li class="li">Feature 32: Capture type for break elements and filter out page and column breaks by default (avoids blank paragraphs caused by manual page breaks).</li>
+        <li class="li">Feature 31: Enable generation of nested inlines by supporting <code>@containerType</code> on inline elements. Lets you generate e.g. <samp class="ph codeph">&lt;sup&gt;&lt;b&gt;A&lt;/b&gt;&lt;/sup&gt;</samp>.</li>
+        <li class="li">Feature 30: Completely reworked how maps are generating, making it possible to generate complex systems of maps and topicrefs. Includes ability to specify <code>@containerType</code> for topicrefs (e.g., "frontmatter" for topicrefs within a book map).</li>
+        <li class="li">Feature 28: Can now specify map and topic generation details on <code>&lt;output&gt;</code> elements since these are usually the same for all instances of a given topic or map type. Values specified on specific style mappings override the values on <code>&lt;output&gt;</code>.</li>
+        <li class="li">Feature 27: Added ability to generate <code>@type</code> attribute on <code>&lt;data&gt;</code> elements via new <code>@typeAttValue</code> attribute on style maps.</li>
+        <li class="li">Feature 18, Feature 24: Added handling of Symbols and Wingdings fonts in Word documents. Result is correct Unicode characters in the generated XML.</li>
+        <li class="li">Feature 8, Feature 23: Generally improved capturing of Word table details in DITA. DITA result should now reflect the Word table as completely as is possible within the limits of CALS tables.</li>
+        <li class="li">Feature 17: Capture literal MathML markup in Word documents as MathML in the generated DITA. Literal MathML is created by the Design Science MathType Word plugin from binary MathType equations.</li>
+        <li class="li">Feature 16: Capture the data behind charts as CALS tables. Note that the chart itself is not captured.</li>
+        <li class="li">Feature 14: Implemented ability to set @toc attribute on generated topicrefs.</li>
+        <li class="li">Feature 1: Implement support for footnotes.</li>
+      </ul>
+      <p class="p">Bugs:</p>
+      <ul class="ul" id="conceptId__ul_ukr_j4t_f4">
+        <li class="li">Issue 45, Issue 46, Issue 58, Issue 152, Issue 159, Issue 161, Issue 162, Issue 166: Reimplemented map and topic generation to correct errors in map generation. Made the intermediate simpleWP XML reflect the map and topic hierarchy to make DITA generation easier. This change could affect custom preprocessing applied to the simpleWP XML. Also adds a number of new attributes to style mapping definitions as required to fully specify map and topicref generation. </li>
+        <li class="li">Issue 156: Correctly handle character styles within hyperlinks.</li>
+        <li class="li">Issue 153: Correctly handle metadata paragraphs after map-generating paragraph.</li>
+        <li class="li">Issue 83, Issue 110, Issue 152: Broke out map and topic filename generation code into separate XSLT modules to make it easier to override or extend: <span class="ph filepath">modeMapUrl.xsl</span> and <span class="ph filepath">modeTopicUrl.xsl</span></li>
+        <li class="li">Issue 121, Issue 129, Issue 143, Issue 148: Improved table generation to capture all table geometry, including horizontal and vertical alignment within cells.</li>
+        <li class="li">Issue 139: Fixed issue with hyperlinks not being generated when <code>@xtrc</code> attributes were filtered out.</li>
+        <li class="li">Handle characters in non-Unicode, Word-specific Symbol and Wingdings fonts. These characters should be translated to the correct Unicode character when there is a Unicode character to use.</li>
+        <li class="li">Issue 63: Improved generation of hyperlinks.</li>
+        <li class="li">Issue 33: Implemented generation of footnotes from Word footnotes.</li>
+        <li class="li">Issue 135: Corrected handling of nbsp references in inline MathML markup.</li>
+        <li class="li">Issue 120: Enable capturing of MathML from "inline" MathML created by MathType from MathType equations.</li>
+        <li class="li">Issue 114: Capture width and height of embedded images as sized in the Word doc.</li>
+        <li class="li">Feature 6, Issue 103: Enable generation of globally unique filenames by providing parameter for filename prefix.</li>
+        <li class="li">Issue 101: Provide parameter to use filenames of linked graphics when there is a linked graphic.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d1229e193_section"><a name="conceptId-d1229e193" id="conceptId-d1229e193" class="anchor"></a><h2 class="title sectiontitle">DITA to InCopy</h2>
+      
+      <p class="p">New features:</p>
+      <ul class="ul" id="conceptId__ul_xg5_hk2_q4">
+        <li class="li">Feature 20: Include map resolution library in base DITA-to-InCopy transform.</li>
+      </ul>
+      <p class="p">Fixed bugs:</p>
+      <ul class="ul" id="conceptId__ul_tny_v12_q4">
+        <li class="li">Issue 133: Corrected generation of ICML table markup, various improvements in generated table geometry.</li>
+        <li class="li">Issue 119: Corrected handling of table titles with non-numeric numbers.</li>
+        <li class="li">Issue 72, Issue 113: Correctly escape grouped style names in style catalog.</li>
+        <li class="li">Issue 94, Issue 107: Handle outputPath correctly in topic2articleIcml.xsl</li>
+        <li class="li">Issue 85: Corrected order of imports in dita2indesign_template.xsl module.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d1229e229_section"><a name="conceptId-d1229e229" id="conceptId-d1229e229" class="anchor"></a><h2 class="title sectiontitle">Transformation Types</h2>
+      
+      <p class="p">New features:</p>
+      <ul class="ul" id="conceptId__ul_mvv_qj2_q4">
+        <li class="li">Feature 7: Implemented support for generating HTML5 video and audio markup. Uses new d4p_mediaDomain specialization module.</li>
+      </ul>
+      <p class="p">Fixed bugs:</p>
+      <ul class="ul" id="conceptId__ul_oyk_2pt_f4">
+        <li class="li">Added XSLT parameter extension points to all transform types</li>
+        <li class="li">Issue 165: Correctly include descendants of sections in enumerables.</li>
+        <li class="li">Issue 164: Correct issue with extra vertical space for <code>&lt;br&gt;</code> in PDF.</li>
+        <li class="li">Issue 155: Correct generation of EPUB list of tables only process list of tables once.</li>
+        <li class="li">Issue 151: Corrected name of parameter extension point for EPUB transformation type.</li>
+        <li class="li">Issue 150: Corrected resolveTopicElementRef() to trap and report case where containing document can't be resolved.</li>
+        <li class="li">Issue 149: Corrected duplicate capturing of enumerables when <code>@chunk</code> is "to-content".</li>
+        <li class="li">Issue 147: Corrected xs:int to xs:integer is dita-support-lib.xsl.</li>
+        <li class="li">Issue 146: Correctly handle toc="no" in HTML2 transform.</li>
+        <li class="li">Issue 142: Corrected generation of duplicate IDs for enumerables.</li>
+        <li class="li">Issue 140: Corrected handling of <code>@locktitle</code> for navtitles on topicrefs</li>
+        <li class="li">Issue 124: Include <code>@type</code> attribute on <code>&lt;link&gt;</code> elements in generated HTML for EPUB and Kindle transforms.</li>
+        <li class="li">Issue 123: Include references to OT catalog in all XSLT calls from D4P transforms.</li>
+        <li class="li">Issue 112: Corrected duplication of index entries in collected index data.</li>
+        <li class="li">Issue 111: Added XSLT parameter extension point to all transforms as for base XHTML transform.</li>
+        <li class="li">Issue 91: Correctly detect failure to resolve topicref in resolve-map.xsl.</li>
+        <li class="li">Issue 89: Corrected failures in graphviz transform.</li>
+        <li class="li">Issue 86: Use base-uri() for resolving relative URI references. Affects DITA support library.</li>
+        <li class="li">Issue 73: Corrected generation of HTML5 video and audio markup. Copying of referenced media objects not yet implemented.</li>
+        <li class="li">Issue 48: Resolve keyrefs in df:getEffectiveTopicUri() function (dita-support-lib.xsl)</li>
+        <li class="li">Issue 43: Generate <code>@type</code> attribute in HTML for EPUB and Kindle.</li>
+        <li class="li">Issue 42: Corrected setting of generateStaticTocBoolean parameter.</li>
+        <li class="li">Issue 39: Correctly handle flagging parameters in HTML2. Issue with copying flagging graphics not yet addressed.</li>
+        <li class="li">Issue 37: Use simple enumeration extensions in EPUB transform.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d1229e344_section"><a name="conceptId-d1229e344" id="conceptId-d1229e344" class="anchor"></a><h2 class="title sectiontitle">Vocabulary</h2>
+      
+      <p class="p">New features:</p>
+      <ul class="ul" id="conceptId__ul_h3j_5j2_q4">
+        <li class="li">Feature 7: New specialization domain, d4p_mediaDomain, that provides specializations of <code>&lt;object&gt;</code> that mirror the HTML5 <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> elements.</li>
+      </ul>
+      <p class="p">Fixed bugs:</p>
+      <ul class="ul" id="conceptId__ul_vj2_412_q4">
+        <li class="li">Issue 72, Issue 168: Use a D4P-specific URN for the reference to the MathML module. This avoids problems where two different DTDs both include MathML.</li>
+        <li class="li">Issue 136: Added missing <code>@class</code> attribute for <code>&lt;d4pPageRange&gt;</code>.</li>
+        <li class="li">Issue 99: Added missing catalog inclusion for xmlDomain.</li>
+        <li class="li">Issue 98: Corrected case and spelling of system IDs for d4p_commonDomainIntegrations external parameter entities.</li>
+      </ul>
+    </div>
+  </div>
+<div class="related-links"></div>
+<footer id="topicsNPLinks"><div id="footer_previous"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../d4p-users-guide/release-notes/release-notes-1.0.0.html" class="previous" rel="internal">Release Notes: Version 1.0.0RC00 (github version)</a></div><div id="footer_next"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../d4p-users-guide/release-notes/release-notes-0.9.18.html" class="next" rel="internal">Release Notes: Version 0.9.18</a></div></footer></div></section></article><div class="clear"></div></div><div class="clearfix"></div></div><div class="clearfix"></div><div id="footer-container" class="grid_12"></div></div></body></html>
