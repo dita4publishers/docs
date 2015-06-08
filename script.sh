@@ -22,8 +22,8 @@ echo "Listing Directory"
 ls .
 
 echo "Building documentation"
-echo "$DITA_DIR/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR"
-ant -f $DITA_DIR/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR
+# must find a way to set DITA_DIR env variable from doc-engine-install.sh
+ant -f DITA-OT1.8.5/build.xml -Dargs.input=~/$DOC_DIR/$WEBSITE_DOC_MAP -Doutput.dir=~/$OUTDIR
 
 echo "Add documentation to repo"
 cd ~/$OUTDIR
