@@ -15,10 +15,9 @@ git checkout doc-engine
 git pull
 git submodule update --init --recursive
 
-bash ./travis/doc-engine-install.sh
+source ./travis/doc-engine-install.sh
 
-travis env list
-
+echo "testing env: DITADIR is $DITA_DIR/"
 
 echo "Building documentation"
 
