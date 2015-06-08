@@ -2,7 +2,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 OUTDIR=OUT
-
+HOME_DIR="$(dirname "$TRAVIS_BUILD_DIR")"
 
 echo "Listing Directory"
 ls .
@@ -21,9 +21,9 @@ source ./travis/doc-engine-install.sh
 echo "testing env: DITADIR is $DITA_DIR/"
 
 echo "Building documentation"
-
+mkdir $HOME_DIR/$OUTDIR
 ant -f $DITA_DIR/integrator.xml
-ant -f $DITA_DIR/build.xml -Dargs.input=$TRAVIS_BUILD_DIR/$WEBSITE_DOC_MAP -Doutput.dir=$OUTDIR -Dtranstype=d4p-html5
+ant -f $DITA_DIR/build.xml -Dargs.input=$TRAVIS_BUILD_DIR/$WEBSITE_DOC_MAP -Doutput.dir=$HOME_DIR/$OUTDIR -Dtranstype=d4p-html5
 
 
 
@@ -35,7 +35,7 @@ cd $DOC_DIR
 git checkout gh-pages
 
 # copy files
-cp -r $DOC_ENGINE_DIR/$DITA_DIR/$OUTDIR/* ./
+cp -r $HOME_DIR/$OUTDIR/* ./
 
 # inside this git repo we'll pretend to be a new user
 echo "git config"
