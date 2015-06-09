@@ -15,6 +15,7 @@ env:
   - secure: "lLc0UVPtc7jdo2QPsc/SSQgdhmYIdQ3alkXjQttIUYC+T3S+8ol7DtBqQZ6jWLOxhVIwfFz4fNf/NtmnME/Yf304Q+KWcQE2NXyKwII/9r994QIeHTyOR5pYdCHUIs/oLbDUIg7bssgJFpqBAqJPBvs6nJCIzhHIR3sFEIoiCRo="
 
 script: 
+  - set -e
   - cd
   - git clone -b doc-engine $D4P_REPO dita4publishers
   - source ./dita4publishers/travis/doc-engine-install.sh
