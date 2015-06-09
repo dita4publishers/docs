@@ -6,17 +6,14 @@ jdk:
 env:
   global:
   - GH_REF: github.com/dita4publishers/docs
-  - DOC_DIR: docs
   - BRANCH: master
-  - WEBSITE_DOC_MAP: docs/user_docs/d4p-users-guide.ditamap
+  - DITAMAP: docs/user_docs/d4p-users-guide.ditamap
+  - TRANSTYPE: d4p-html5
   - D4P_REPO: https://github.com/dita4publishers/dita4publishers.git
-  - D4P_DIR: dita4publishers
+  - GIT_USERNAME: "Travis CI"
+  - GIT_EMAIL: "travis@dita4publishers.com"
   - secure: "lLc0UVPtc7jdo2QPsc/SSQgdhmYIdQ3alkXjQttIUYC+T3S+8ol7DtBqQZ6jWLOxhVIwfFz4fNf/NtmnME/Yf304Q+KWcQE2NXyKwII/9r994QIeHTyOR5pYdCHUIs/oLbDUIg7bssgJFpqBAqJPBvs6nJCIzhHIR3sFEIoiCRo="
 
-script: bash ./script.sh
-
-after_success:
-  - cd ~/$DOC_DIR
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - git push
+script: 
+  - git clone $D4P_REPO
+  - source ./$D4P_REPO/travis/doc-engine-install.sh
