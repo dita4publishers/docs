@@ -16,5 +16,5 @@ env:
 
 script: 
   - cd
-  - git clone $D4P_REPO dita4publishers
+  - git clone -b doc-engine $D4P_REPO dita4publishers
   - source ./dita4publishers/travis/doc-engine-install.sh
