@@ -1,0 +1,223 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Release Notes: Version 0.9.18</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="schema.DC" href="http://purl.org/dc/terms/"><meta name="DC.Type" content="concept"><meta name="DC.Title" content="Release Notes: Version 0.9.18"><meta name="abstract" content="Version 0.9.18 released 8 Jan 2012"><meta name="description" content="Version 0.9.18 released 8 Jan 2012"><meta name="DC.subject" content=", release notes, Version 0.9.18"><meta name="keywords" content=", release notes, Version 0.9.18"><meta name="DC.Relation" scheme="URI" content="release-notes.html"><meta name="prodname" content="DITA For Publishers"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0RC07"><meta name="DC.Creator" content="W. Eliot Kimber"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="conceptId"><script type="text/javascript">var d4p = {"relativePath":"..\/..\/..\/","dev":false,"debug":false,"draft":false,"nextTopicHref":"user_docs\/d4p-users-guide\/release-notes\/release-notes-0.9.16.html","previousTopicHref":"user_docs\/d4p-users-guide\/release-notes\/release-notes-0.9.19.html","root":false,"topic":{"chunked":""},"map":{"title":"  DITA For Publishers User Guide  ","chunked":false},"search":{"minlength":2},"l":{"searchPageHeading":"Search Results","close":"Close"}}</script><link rel="stylesheet" type="text/css" media="screen, projection" href="../../../themes/dita-d4p-classic/css/style.css"><link rel="stylesheet" type="text/css" media="screen, projection, print" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><script type="text/javascript">
+      
+        d4p.cssGridPath = d4p.dev ? 'html5-themes/modules/960-Responsive-Grid/css/' : 'themes/dita-d4p-classic/css/';
+        var ADAPT_CONFIG = {
+          // Where is your CSS?
+          path: d4p.relativePath + d4p.cssGridPath,
+          
+          // false = Only run once, when page first loads.
+          // true = Change on window resize and page tilt.
+          dynamic: true,
+          
+          // Optional callback... myCallback(i, width)
+          callback: doc_resize,
+          
+          // First range entry is the minimum.
+          // Last range entry is the maximum.
+          // Separate ranges by "to" keyword.
+          range: [
+             // small (size-0)
+            '0px    to 760px  = mobile.css',
+             // medium (size-1, size-2)
+            '760px  to 980px  = 720.css',
+            '980px  to 1270px = 960.css',
+             // large (size-3, size-5)
+            '1270px to 1600px = 1200.css',
+            '1600px to 1940px = 1560.css',
+             // extra large (size-6)
+            '1940px to 2540px = 1920.css',
+            '2540px           = 2520.css'
+          ]
+        };
+
+        function doc_resize(i, width)
+        {
+          d4p.setBodyClassfunction(i, width);
+        }
+
+
+        
+      </script><script type="text/javascript" src="../../../themes/dita-d4p-classic/js/script.js"></script></head><body class="en-us dita-d4p-classic centered navigation-default"><div id="d4h5-main-container" class="container_12" role="application"><ul id="page-links" class="hidden"><li><a id="skip-to-content" href="#d4h5-main-content">Skip to content</a></li><li><a id="skip-to-localnav" href="#local-navigation">Skip to navigation</a></li><li><a id="skip-to-footer" href="#footer">Skip to footer</a></li></ul><header role="banner" aria-labelledby="publication-title" class="hide-for-small"><div class="grid_8"><h1 id="publication-title">  DITA For Publishers User Guide  </h1></div><section class="grid_4 search-box"><form id="search" role="search"><div class="form-group"><input id="search-text" type="text" autocomplete="off" class="form-control" placeholder="Search"></div></form></section><secion class="clearfix"></secion></header><div id="d4h5-section-container" class="grid_12"><nav id="local-navigation" class="grid_4 alpha omega" role="navigation" aria-label="Main navigation"><div id="nav-content"><ul><li><a href="../../../index.html">Table of Contents</a></li><li><a href="../frontmatter/coverpage.html">DITA For Publishers User Guide</a></li><li><a href="../topics/about-this-book.html">About This Book</a></li><li class="collapsible active"><a href="release-notes.html">Release Notes</a><ul><li><a href="release-notes-1.0.0.html">Release Notes: Version 1.0.0RC00 (github version)</a></li><li><a href="release-notes-0.9.19.html">Release Notes: Version 0.9.19RC12</a></li><li class=" active"><a href="release-notes-0.9.18.html" class=" selected">Release Notes: Version 0.9.18</a></li><li><a href="release-notes-0.9.16.html">Release Notes: Version 0.9.16</a></li><li><a href="release-notes-0.9.15.html">Release Notes: Version 0.9.15</a></li><li><a href="release-notes-0.9.14.html">Release Notes: Version 0.9.14</a></li><li><a href="release-notes-0.9.13.html">Release Notes: Version 0.9.13</a></li><li><a href="release-notes-0.9.12.html">Release Notes: Version 0.9.12</a></li><li><a href="release-notes-0.9.11.html">Release Notes: Version 0.9.11</a></li><li><a href="release-notes-0.9.10.html">Release Notes: Version 0.9.10</a></li><li><a href="release-notes-0.9.9.html">Release Notes: Version 0.9.9</a></li></ul></li><li><a href="../topics/intro-to-d4p.html"><span class="enumeration enumeration0">Chapter&nbsp;1. </span>Introduction to DITA For Publishers</a></li><li class="collapsible collapsed"><a href="../introduction-chapter.html"><span class="enumeration enumeration0">Part&nbsp;I. </span>The DITA For Publishers Open Toolkit Plugins</a><ul><li><a href="../tasks/plugin-installation.html"><span class="enumeration enumeration1">Chapter&nbsp;2. </span>Installing the Toolkit Plugins</a></li><li class="collapsible collapsed"><a href="../../../repo/org.dita4publishers.epub/epub-plugin/generating-epubs.html"><span class="enumeration enumeration1">Chapter&nbsp;3. </span>Generating EPUBs and Kindle Books from DITA Content</a><ul><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/generating-epubs-from-oxygen.html">Generating EPUBs From OxygenXML</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/generating-kindle-books-from-oxygen.html">Generating Kindle Books From OxygenXML</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/using-custom-css.html">Using Custom CSS Style Sheets</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/creating-cover-graphics.html">Creating Cover Graphics and Covers</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/creating-opf-metadata.html">Creating Arbitrary EPUB OPF Metadata</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/overriding-base-processing.html">Implementing Overrides for Common Processing</a></li><li class="collapsible collapsed"><a href="../../../repo/org.dita4publishers.epub/epub-plugin/epub-transtype-parameters-ref.html">EPUB and Kindle Transformation Parameters</a><ul><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-argsCssOutputDir.html">args.css.output.dir Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-coverGraphicFile.html">cover.graphic.file Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxNavDepth.html">d4p.max.nav.depth Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxTocDepth.html">d4p.max.toc.depth Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubIncludeAutoRellinks.html">epub.exclude.auto.rellinks Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubPubidUriStub.html">epub.pubid.uri.stub Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubTempDir.html">epub.temp.dir Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-imagesOutputDir.html">images.output.dir Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-kindleGenExecutable.html">kindlegen.executable Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicClassSpec.html">title.only.topic.class.spec Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicTitleClassSpec.html">title.only.topic.title.class.spec Ant parameter</a></li><li><a href="../../../repo/org.dita4publishers.epub/epub-plugin/reference/ant-parm-topicsOutputDir.html">topics.output.dir Ant parameter</a></li></ul></li></ul></li></ul></li><li><a href="../backmatter/colophon.html">Colophon</a></li><li><a href="../../../generated-index.html">Index</a></li></ul></div></nav><div id="d4h5-main-content" class="grid_8 alpha omega"><article><nav id="content-toolbar" class="toolbar hide-for-small"><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="release-notes.html" title="Release Notes"><span class="fi fi-arrow-up"></span><span class="screen-reader">Release Notes</span></a></div></div></nav><section id="page"><div class="page concept    topic topic concept concept "><a name="conceptId" id="conceptId" class="anchor"></a>
+ <h1 class="title topictitle1">Release Notes: Version 0.9.18</h1>
+ 
+  
+ <div class="body conbody"><p class="shortdesc">Version 0.9.18 released 8 Jan 2012</p>
+    <div class="section" id="conceptId-d2286e40_section"><a name="conceptId-d2286e40" id="conceptId-d2286e40" class="anchor"></a><h2 class="title sectiontitle">All transformation types (HTML2, EPUB, etc.)</h2>
+      
+      <ul class="ul">
+        <li class="li">Removed duplicate XSLT imports</li>
+        <li class="li">Created common.html plugin to provide single import point for all
+          extensions to the HTML transformation type</li>
+        <li class="li">Fixed handling of <code>@scale</code> attribute for images.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d2286e61_section"><a name="conceptId-d2286e61" id="conceptId-d2286e61" class="anchor"></a><h2 class="title sectiontitle">Word to DITA</h2>
+      
+      <ul class="ul">
+        <li class="li">Fixed the following logged bugs:<dl class="dl">
+          
+            <dt class="dt dlterm"> 3435135: Misnumbered topics</dt>
+            <dd class="dd">Added check for non-topic paragraphs between root-map-generating
+              paragraph and first map- or topic-generating paragraph. This
+              avoids the problem where content paragraphs immediately after map
+              root cause misnumbering of generated topic filenames.</dd>
+          
+          
+            <dt class="dt dlterm"> 3435133: Use DOCX filename for name of result file </dt>
+            <dd class="dd">Updated the plugin Ant script to use the DOCX filename as the
+              base name for the root topic or map by default. </dd>
+          
+          
+            <dt class="dt dlterm"> 3434693: An empty sequence is not allowed as the value of
+              variable $styleMap</dt>
+            <dd class="dd">Fixed the code so the variable allows an empty sequence.</dd>
+          
+          
+            <dt class="dt dlterm"> 3435135: Simple word doc generates incorrect topic filename  </dt>
+            <dd class="dd">Improved error reporting for non-topic-creating paragraphs
+              before first topic-creating paragraph in Word doc.</dd>
+          
+          
+            <dt class="dt dlterm"> 3434694: Key styleMaps has not been defined </dt>
+            <dd class="dd">Fixed the XSLT.</dd>
+          
+          
+            <dt class="dt dlterm"> 3434693: An empty sequence is not allowed as the value of
+              variable $s </dt>
+            <dd class="dd">Fixed the XSLT.</dd>
+          
+          
+            <dt class="dt dlterm"> 3436363: containerOutputclass causes transform to fail</dt>
+            <dd class="dd">Fixed in the XSLT.</dd>
+          
+          </dl></li>
+        <li class="li">Implemented the following feature requests:<dl class="dl">
+          
+            <dt class="dt dlterm"> 3309933: Add runtime parameter to set result language </dt>
+            <dd class="dd">Added new Ant parameter <span class="keyword parmname">w2d.language</span> that
+              sets the value to use for the <code>@xml:lang</code> attribute.
+              If not specified, value "en-US" is used.</dd>
+          
+          </dl></li>
+        <li class="li">Other fixes:<ul class="ul" id="conceptId__ul_sqz_431_g2">
+          <li class="li">Use configured topic extension for root topic output.</li>
+          <li class="li">Use style name "Normal" for unmapped paragraphs. This lets you
+            explicitly map unstyled paragraphs rather than depending on the
+            built-in default mapping to <code>&lt;p&gt;</code>.</li>
+          <li class="li">Updated built-in default style-to-tag map to include Heading 2,
+            Heading 3, and Normal.</li>
+          <li class="li">Refined the Ant script to make properties appropriately
+            conditional and to avoid setting any unnecessary global
+            properties.</li>
+          <li class="li">Added start of an automated regression test suite in the project's
+            test/ area in the source tree. These tests also serve as examples of
+            how to use Ant to call the Toolkit transform.</li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d2286e182_section"><a name="conceptId-d2286e182" id="conceptId-d2286e182" class="anchor"></a><h2 class="title sectiontitle">EPUB and Kindle</h2>
+      
+      <ul class="ul" id="conceptId__ul_dcy_dj1_g2">
+        <li class="li">Fixed the following logged bugs:<dl class="dl">
+          
+            <dt class="dt dlterm">3434065: Empty sequence not allowed for $graphicPath </dt>
+            <dd class="dd">Fixed the bug so <code>&lt;image&gt;</code> with no
+              <code>@href</code> or <code>@keyref</code> is ignored when
+              building the graphic map but is reported as a warning.</dd>
+          
+          
+            <dt class="dt dlterm">3433937: Include keywords as dc:subject in EPUB/Kindle books </dt>
+            <dd class="dd">Keywords within metadata/keywords become
+              <code>&lt;dc:subject&gt;</code> elements in the EPUB and Kindle
+              metadata.</dd>
+          
+          
+            <dt class="dt dlterm">3433935: Include authors in EPUB/Kindle metadata</dt>
+            <dd class="dd">All authors in the publication metadata are included with
+              appropriate roles.</dd>
+          
+          
+            <dt class="dt dlterm">3433934: Include ISBN and other bookid in EPUB/Kindle</dt>
+            <dd class="dd">ISBN numbers and other bookid content is be included in the EPUB
+              and Kindle metadata appropriately.</dd>
+          
+          
+            <dt class="dt dlterm">3411763: Warnings received when an image has the @scale
+              attribute set </dt>
+            <dd class="dd">Check for values with a leading "-" and suppress them and report
+              them. If the value is positive, then use it. If it is a bare
+              number, append "px" to the value. </dd>
+          
+          
+            <dt class="dt dlterm">3331319: @toc = no not respected for EPUB ToC </dt>
+            <dd class="dd">Topics with toc="no" should not be reflected in the EPUB
+              ToC.</dd>
+          
+          
+            <dt class="dt dlterm">3317385: Chunked topics produce bad EPUB toc </dt>
+            <dd class="dd">Topics chucked to content should produce correct results in the
+              ToC.</dd>
+          
+          
+            <dt class="dt dlterm">3312288: Problem with default parameter values </dt>
+            <dd class="dd">All D4P plugin Ant build files have been reworked to avoid
+              setting any global parameters inappropriately.</dd>
+          
+          
+            <dt class="dt dlterm"> 3471010: Handle .jpeg files for EPUB/Kindle </dt>
+            <dd class="dd">EPUB and Kindle processing now correctly handles .jpeg extension
+              in addition to .jpg.</dd>
+          
+          </dl></li>
+        <li class="li">Other fixes/enhancements:<ul class="ul" id="conceptId__ul_1rl_3l1_g2">
+          <li class="li">Factored out some common code between EPUB and Kindle
+            transforms.</li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d2286e298_section"><a name="conceptId-d2286e298" id="conceptId-d2286e298" class="anchor"></a><h2 class="title sectiontitle">DITA to InDesign</h2>
+      
+      <ul class="ul" id="conceptId__ul_bcv_wvs_w2">
+        <li class="li">Enhancements and bug fixes to the Java INX support library. Can now
+          generate multi-spread page sequences as configured in a separate
+          configuration file. Corrects bugs with correlation of frames to
+          pages.</li>
+        <li class="li">Added support for parsing and accessing conversion configurations
+          defined using the new conversion_config topic type.</li>
+        <li class="li">Added XSLT support for generating CS 4/5 ICML InCopy articles from
+          DITA content.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d2286e316_section"><a name="conceptId-d2286e316" id="conceptId-d2286e316" class="anchor"></a><h2 class="title sectiontitle">Vocabulary Modules</h2>
+      
+      <ul class="ul" id="conceptId__ul_5v1_zm1_g2">
+        <li class="li">Fixed the following logged bugs:<dl class="dl">
+          
+            <dt class="dt dlterm">3371240: Inconsistencies in SYSTEM name in topic.dtd</dt>
+            <dd class="dd">Corrected "dp4" to "d4p" throughout. Corrected "d4pcommon" to
+              "d4p_common".</dd>
+          
+          </dl></li>
+        <li class="li">Corrected some configuration errors in doctype shells.</li>
+        <li class="li">Upgraded topic types to use DITA 1.2 coding conventions.</li>
+        <li class="li">Added new <code>&lt;art-ph&gt;</code> element. Specialize
+          <code>&lt;art&gt;</code> from topic/p so it can go in
+          <code>&lt;fig&gt;</code> directly.</li>
+        <li class="li">Added new topic type "conversion_configuration", used to configure
+          Word2DITA and DITA2InDesign transforms, especially the
+          DITA-to-InDesign Java processing.</li>
+      </ul>
+    </div>
+    <div class="section" id="conceptId-d2286e361_section"><a name="conceptId-d2286e361" id="conceptId-d2286e361" class="anchor"></a><h2 class="title sectiontitle">Documentation</h2>
+      
+      <ul class="ul" id="conceptId__ul_mqp_vq1_g2">
+        <li class="li">Added missing documentation for word2dita Ant parameters.</li>
+        <li class="li">Added vocabulary topics from the website content into the User
+          Guide</li>
+      </ul>
+    </div>
+  </div>
+<div class="related-links"></div>
+<footer id="topicsNPLinks"><div id="footer_previous"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.19.html" class="previous" rel="internal">Release Notes: Version 0.9.19RC12</a></div><div id="footer_next"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.16.html" class="next" rel="internal">Release Notes: Version 0.9.16</a></div></footer></div></section></article><div class="clear"></div></div><div class="clearfix"></div></div><div class="clearfix"></div><div id="footer-container" class="grid_12"></div></div></body></html>
