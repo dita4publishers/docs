@@ -93,7 +93,7 @@
           <subsection
             href="d4p-users-guide/epub-plugin/setting-up-kindlegen.xml"/>
         </chapter>
-        <topicref href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>
+        <chapter href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>
        
         <!--chapter
           href="d4p-users-guide/map-driven-processing/map-driven-processing.xml">
