@@ -90,57 +90,12 @@
         href="d4p-users-guide/introduction-chapter.xml">
         <chapter
           href="d4p-users-guide/tasks/plugin-installation.xml">
-          <!--subsection
-            href="d4p-users-guide/epub-plugin/setting-up-kindlegen.xml"/-->
+          <subsection
+            href="d4p-users-guide/epub-plugin/setting-up-kindlegen.xml"/>
         </chapter>
+        <topicref href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>
+       
         <!--chapter
-          href="d4p-users-guide/epub-plugin/generating-epubs.xml">
-          <subsection
-            href="d4p-users-guide/epub-plugin/generating-epubs-from-oxygen.xml"/>
-          <subsection
-            href="d4p-users-guide/epub-plugin/generating-kindle-books-from-oxygen.xml"/>
-          <topicref
-            href="d4p-users-guide/epub-plugin/using-custom-css.xml"/>
-          <subsection
-            href="d4p-users-guide/epub-plugin/creating-cover-graphics.xml"/>
-          <abbrevlist
-            href="d4p-users-guide/epub-plugin/creating-opf-metadata.xml"/>
-          <subsection
-            href="d4p-users-guide/epub-plugin/overriding-base-processing.xml"/>
-          <subsection
-            href="d4p-users-guide/epub-plugin/epub-transtype-parameters-ref.xml">
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-argsCssOutputDir.xml"
-              keys="args.css.output.dir.refentry"
-              collection-type="sequence"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-coverGraphicFile.xml"
-              keys="ant-param_cover.graphic.file"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-d4pMaxNavDepth.xml"
-              keys="ant-param_d4p.max.nav.depth"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-d4pMaxTocDepth.xml"
-              keys="ant-param_d4p.max.toc-depth"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-epubIncludeAutoRellinks.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-epubPubidUriStub.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-epubTempDir.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-imagesOutputDir.xml"/>
-            <subsection
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-kindleGenExecutable.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-titleOnlyTopicClassSpec.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-titleOnlyTopicTitleClassSpec.xml"/>
-            <topicref
-              href="d4p-users-guide/epub-plugin/reference/ant-parm-topicsOutputDir.xml"/>
-          </subsection>
-        </chapter>
-        <chapter
           href="d4p-users-guide/map-driven-processing/map-driven-processing.xml">
           <subsection
             href="d4p-users-guide/map-driven-processing/data-collection.xml"/>
