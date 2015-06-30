@@ -8,3 +8,6 @@
 [submodule "docs/repo/org.dita4publishers.common.mapdriven"]
 	path = docs/repo/org.dita4publishers.common.mapdriven
 	url = https://github.com/dita4publishers/org.dita4publishers.common.mapdriven.git
+[submodule "docs/repo/org.dita4publishers.html2"]
+	path = docs/repo/org.dita4publishers.html2
+	url = https://github.com/dita4publishers/org.dita4publishers.html2.git
