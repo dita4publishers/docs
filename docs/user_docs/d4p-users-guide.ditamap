@@ -96,7 +96,7 @@
         
         <chapter href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>
         <chapter href="../repo/org.dita4publishers.common.mapdriven/map-driven-processing/map-driven-processing.ditamap" format="ditamap"/>
-       
+        <chapter href="../repo/org.dita4publishers.html2/html2-plugin/html2-plugin.ditamap" format="ditamap"/>
         
 
         <!--topicref href="d4p-users-guide/html5-plugin/html5-plugin.ditamap" format="ditamap"/>
