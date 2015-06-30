@@ -1,0 +1,124 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Index Generation</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="schema.DC" href="http://purl.org/dc/terms/"><meta name="DC.Type" content="concept"><meta name="DC.Title" content="Index Generation"><meta name="abstract" content="Overview of using the grouped and sorted index entries in the collected data to do index generation."><meta name="description" content="Overview of using the grouped and sorted index entries in the collected data to do index generation."><meta name="DC.subject" content="index, generation of"><meta name="keywords" content="index, generation of"><meta name="DC.Relation" scheme="URI" content="../../../user_docs/d4p-users-guide/introduction-chapter.html"><meta name="DC.Relation" scheme="URI" content="../../org.dita4publishers.epub/epub-plugin/generating-epubs.html"><meta name="DC.Relation" scheme="URI" content="map-driven-processing.html"><meta name="DC.Relation" scheme="URI" content="map-driven-processing.html"><meta name="DC.Relation" scheme="URI" content="enumeration.html"><meta name="DC.Relation" scheme="URI" content="graphic-map-generation.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="conceptId"><script type="text/javascript">var d4p = {"relativePath":"..\/..\/..\/","dev":false,"debug":false,"draft":false,"nextTopicHref":"repo\/org.dita4publishers.common.mapdriven\/map-driven-processing\/graphic-map-generation.html","previousTopicHref":"repo\/org.dita4publishers.common.mapdriven\/map-driven-processing\/enumeration.html","root":false,"topic":{"chunked":""},"map":{"title":"  DITA For Publishers User Guide  ","chunked":false},"search":{"minlength":2},"l":{"searchPageHeading":"Search Results","close":"Close"}}</script><link rel="stylesheet" type="text/css" media="screen, projection" href="../../../themes/dita-d4p-classic/css/style.css"><link rel="stylesheet" type="text/css" media="screen, projection, print" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><script type="text/javascript">
+      
+        d4p.cssGridPath = d4p.dev ? 'html5-themes/modules/960-Responsive-Grid/css/' : 'themes/dita-d4p-classic/css/';
+        var ADAPT_CONFIG = {
+          // Where is your CSS?
+          path: d4p.relativePath + d4p.cssGridPath,
+          
+          // false = Only run once, when page first loads.
+          // true = Change on window resize and page tilt.
+          dynamic: true,
+          
+          // Optional callback... myCallback(i, width)
+          callback: doc_resize,
+          
+          // First range entry is the minimum.
+          // Last range entry is the maximum.
+          // Separate ranges by "to" keyword.
+          range: [
+             // small (size-0)
+            '0px    to 760px  = mobile.css',
+             // medium (size-1, size-2)
+            '760px  to 980px  = 720.css',
+            '980px  to 1270px = 960.css',
+             // large (size-3, size-5)
+            '1270px to 1600px = 1200.css',
+            '1600px to 1940px = 1560.css',
+             // extra large (size-6)
+            '1940px to 2540px = 1920.css',
+            '2540px           = 2520.css'
+          ]
+        };
+
+        function doc_resize(i, width)
+        {
+          d4p.setBodyClassfunction(i, width);
+        }
+
+
+        
+      </script><script type="text/javascript" src="../../../themes/dita-d4p-classic/js/script.js"></script></head><body class="en-us dita-d4p-classic centered navigation-default"><div id="d4h5-main-container" class="container_12" role="application"><ul id="page-links" class="hidden"><li><a id="skip-to-content" href="#d4h5-main-content">Skip to content</a></li><li><a id="skip-to-localnav" href="#local-navigation">Skip to navigation</a></li><li><a id="skip-to-footer" href="#footer">Skip to footer</a></li></ul><header role="banner" aria-labelledby="publication-title" class="hide-for-small"><div class="grid_8"><h1 id="publication-title">  DITA For Publishers User Guide  </h1></div><section class="grid_4 search-box"><form id="search" role="search"><div class="form-group"><input id="search-text" type="text" autocomplete="off" class="form-control" placeholder="Search"></div></form></section><secion class="clearfix"></secion></header><div id="d4h5-section-container" class="grid_12"><nav id="local-navigation" class="grid_4 alpha omega" role="navigation" aria-label="Main navigation"><div id="nav-content"><ul><li><a href="../../../index.html">Table of Contents</a></li><li><a href="../../../user_docs/d4p-users-guide/frontmatter/coverpage.html">DITA For Publishers User Guide</a></li><li><a href="../../../user_docs/d4p-users-guide/topics/about-this-book.html">About This Book</a></li><li class="collapsible collapsed"><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes.html">Release Notes</a><ul><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-1.0.0.html">Release Notes: Version 1.0.0RC00 (github version)</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.19.html">Release Notes: Version 0.9.19RC12</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.18.html">Release Notes: Version 0.9.18</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.16.html">Release Notes: Version 0.9.16</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.15.html">Release Notes: Version 0.9.15</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.14.html">Release Notes: Version 0.9.14</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.13.html">Release Notes: Version 0.9.13</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.12.html">Release Notes: Version 0.9.12</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.11.html">Release Notes: Version 0.9.11</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.10.html">Release Notes: Version 0.9.10</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.9.html">Release Notes: Version 0.9.9</a></li></ul></li><li><a href="../../../user_docs/d4p-users-guide/topics/intro-to-d4p.html"><span class="enumeration enumeration0">Chapter&nbsp;1. </span>Introduction to DITA For Publishers</a></li><li class="collapsible active"><a href="../../../user_docs/d4p-users-guide/introduction-chapter.html"><span class="enumeration enumeration0">Part&nbsp;I. </span>The DITA For Publishers Open Toolkit Plugins</a><ul><li><a href="../../../user_docs/d4p-users-guide/tasks/plugin-installation.html"><span class="enumeration enumeration1">Chapter&nbsp;2. </span>Installing the Toolkit Plugins</a></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.epub/epub-plugin/generating-epubs.html"><span class="enumeration enumeration1">Chapter&nbsp;3. </span>Generating EPUBs and Kindle Books from DITA Content</a><ul><li><a href="../../org.dita4publishers.epub/epub-plugin/generating-epubs-from-oxygen.html">Generating EPUBs From OxygenXML</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/generating-kindle-books-from-oxygen.html">Generating Kindle Books From OxygenXML</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/using-custom-css.html">Using Custom CSS Style Sheets</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/creating-cover-graphics.html">Creating Cover Graphics and Covers</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/creating-opf-metadata.html">Creating Arbitrary EPUB OPF Metadata</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/overriding-base-processing.html">Implementing Overrides for Common Processing</a></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.epub/epub-plugin/epub-transtype-parameters-ref.html">EPUB and Kindle Transformation Parameters</a><ul><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-argsCssOutputDir.html">args.css.output.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-coverGraphicFile.html">cover.graphic.file Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxNavDepth.html">d4p.max.nav.depth Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxTocDepth.html">d4p.max.toc.depth Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubIncludeAutoRellinks.html">epub.exclude.auto.rellinks Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubPubidUriStub.html">epub.pubid.uri.stub Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubTempDir.html">epub.temp.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-imagesOutputDir.html">images.output.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-kindleGenExecutable.html">kindlegen.executable Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicClassSpec.html">title.only.topic.class.spec Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicTitleClassSpec.html">title.only.topic.title.class.spec Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-topicsOutputDir.html">topics.output.dir Ant parameter</a></li></ul></li></ul></li><li class="collapsible active"><a href="map-driven-processing.html"><span class="enumeration enumeration1">Chapter&nbsp;4. </span>Map-Driven Processing</a><ul><li><a href="map-driven-processing.html">Map-Driven Processing</a></li><li><a href="enumeration.html">Numbering Things: Collected Data and Enumeration</a></li><li class=" active"><a href="index-generation.html" class=" selected">Index Generation</a></li><li><a href="graphic-map-generation.html">Graphic Map Generation</a></li></ul></li></ul></li><li><a href="../../../user_docs/d4p-users-guide/backmatter/colophon.html">Colophon</a></li><li><a href="../../../generated-index.html">Index</a></li></ul></div></nav><div id="d4h5-main-content" class="grid_8 alpha omega"><article><nav id="content-toolbar" class="toolbar hide-for-small"><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="../../../user_docs/d4p-users-guide/introduction-chapter.html" title="The DITA For Publishers Open Toolkit Plugins"><span class="fi fi-arrow-up"></span><span class="screen-reader">The DITA For Publishers Open Toolkit Plugins</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="previouslink"><a href="../../org.dita4publishers.epub/epub-plugin/generating-epubs.html" title="Generating EPUBs and Kindle Books from DITA Content"><span class="fi fi-arrow-left"></span><span class="screen-reader">Generating EPUBs and Kindle Books from DITA Content</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="nextlink"><a href="map-driven-processing.html" title="Map-Driven Processing"><span class="fi fi-arrow-right"></span><span class="screen-reader">Map-Driven Processing</span></a></div></div><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="map-driven-processing.html" title="Map-Driven Processing"><span class="fi fi-arrow-up"></span><span class="screen-reader">Map-Driven Processing</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="previouslink"><a href="enumeration.html" title="Numbering Things: Collected Data and Enumeration"><span class="fi fi-arrow-left"></span><span class="screen-reader">Numbering Things: Collected Data and Enumeration</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="nextlink"><a href="graphic-map-generation.html" title="Graphic Map Generation"><span class="fi fi-arrow-right"></span><span class="screen-reader">Graphic Map Generation</span></a></div></div></nav><section id="page"><div class="page concept    topic topic concept concept "><a name="conceptId" id="conceptId" class="anchor"></a>
+ <h1 class="title topictitle1">Index Generation</h1>
+ 
+  
+ <div class="body conbody"><p class="shortdesc">Overview of using the grouped and sorted index entries in the
+    collected data to do index generation.</p>
+   <p class="p">The collected data includes grouped-and-sorted index entries. This data
+      can then be used to generate output-specific indexes, such as
+      back-of-the-book indexes for print, navigation trees in online outputs,
+      and so on.</p>
+    <p class="p">The DITA for Publishers HTML2 and EPUB/Kindle transformation types
+      provide examples of using the collected index entries to generate various
+      output forms of the index. The HTML2 transformation type can include the
+      index as part of the left-nav dynamic table of contents. The EPUB/Kindle
+      transformation type can include the index as a HTML file with links back
+      to the entries in content.</p>
+    <div class="p">The collected index data looks like
+      this:<pre class="pre codeblock">&lt;mapdriven:collected-data xmlns:mapdriven="http://dita4publishers.org/mapdriven"
+                          xmlns:index-terms="http://dita4publishers.org/index-terms"
+                          xmlns:enum="http://dita4publishers.org/enumerables"&gt;
+   &lt;index-terms:index-terms&gt;
+      &lt;index-terms:ungrouped&gt;
+        ...
+      &lt;/index-terms:ungrouped&gt;
+      &lt;index-terms:grouped-and-sorted&gt;
+          ...
+          &lt;index-terms:index-group grouping-key="g" sorting-key="g"&gt;
+            &lt;index-terms:label&gt;G&lt;/index-terms:label&gt;
+            &lt;index-terms:sub-terms&gt;
+               &lt;index-terms:index-term grouping-key="g" sorting-key="general task"&gt;
+                  &lt;index-terms:label&gt;general task&lt;/index-terms:label&gt;
+                  &lt;index-terms:original-markup&gt;
+                     &lt;indexterm xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+                                class="- topic/indexterm "
+                                xtrf="/Users/ekimber/workspace/dita-for-practitioners/doc_src/body/part-arch-overview/conref-facility.xml"
+                                xtrc="indexterm:69"&gt;general task&lt;/indexterm&gt;
+                  &lt;/index-terms:original-markup&gt;
+                  &lt;index-terms:targets&gt;
+                     &lt;index-terms:target source-uri="file:/Users/ekimber/workspace/dita-for-practitioners/doc_src/temp/epub/body/part-arch-overview/conref-facility.xml#subsection_gsu_mxu_hb"&gt;
+                        &lt;indexterm xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+                                   class="- topic/indexterm "
+                                   xtrf="/Users/ekimber/workspace/dita-for-practitioners/doc_src/body/part-arch-overview/conref-facility.xml"
+                                   xtrc="indexterm:69"&gt;general task&lt;/indexterm&gt;
+                     &lt;/index-terms:target&gt;
+                  &lt;/index-terms:targets&gt;
+                  &lt;index-terms:sub-terms/&gt;
+               &lt;/index-terms:index-term&gt;
+               ...
+            &lt;/index-terms:sub-terms&gt;
+            ...
+         &lt;/index-terms:index-group&gt;
+         ...
+      &lt;/index-terms:grouped-and-sorted&gt;
+    &lt;/index-terms:index-terms&gt;
+    ...
+&lt;/mapdriven:collected-data&gt;</pre></div>
+    <p class="p">The <code>&lt;index-terms:ungrouped&gt;</code> element contains the raw
+      index entries in the order they occur in the source. You can normally
+      ignore it.</p>
+    <p class="p">The <code>&lt;index-terms:grouped-and-sorted&gt;</code> structure contains
+      the grouped-and-sorted index entries. The structure is pretty
+      self-explanatory. Each group and term has a grouping key and a sorting
+      key. For groups the two will usually be the same, but for entries, they
+      will usually be different. Each <code>&lt;index-terms:index-term&gt;</code>
+      element contains the term's label, the original DITA
+      <code>&lt;indexterm&gt;</code> markup, the targets to which the entry links
+      (meaning all the places the original term occurred in the source), and any
+      subordinate terms.</p>
+    <p class="p">The index grouping and sorting is implemented in the file
+      <span class="ph filepath">org.dita4publishers.common.mapdriven/xsl/indexProcessing.xsl</span>.
+      You can modify the default grouping and sorting behavior by overriding or
+      extending the mode <span class="keyword">group-and-sort-index</span>. You can modify
+      the default grouping and sorting key construction by overriding the
+      template for "topic/indexterm" in mode
+      <span class="keyword">gather-index-terms</span>. This template uses the functions
+      <span class="keyword">local:construct-index-group-key()</span> and
+      <span class="keyword">local:construct-index-term-grouping-key()</span> to construct
+      the grouping and sort keys. You can implement your own functions if you
+      need different grouping and sort keys, which is likely if you are working
+      with non-English documents.</p>
+ </div>
+<div class="related-links"></div>
+<footer id="topicsNPLinks"><div id="footer_previous"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../repo/org.dita4publishers.common.mapdriven/map-driven-processing/enumeration.html" class="previous" rel="internal">Numbering Things: Collected Data and Enumeration</a></div><div id="footer_next"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../repo/org.dita4publishers.common.mapdriven/map-driven-processing/graphic-map-generation.html" class="next" rel="internal">Graphic Map Generation</a></div></footer></div></section></article><div class="clear"></div></div><div class="clearfix"></div></div><div class="clearfix"></div><div id="footer-container" class="grid_12"></div></div></body></html>
