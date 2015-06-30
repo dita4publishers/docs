@@ -93,20 +93,12 @@
           <subsection
             href="d4p-users-guide/epub-plugin/setting-up-kindlegen.xml"/>
         </chapter>
+        
         <chapter href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>
+        <chapter href="../repo/org.dita4publishers.common.mapdriven/map-driven-processing/map-driven-processing.ditamap" format="ditamap"/>
        
+        
         <!--chapter
-          href="d4p-users-guide/map-driven-processing/map-driven-processing.xml">
-          <subsection
-            href="d4p-users-guide/map-driven-processing/data-collection.xml"/>
-          <subsection
-            href="d4p-users-guide/map-driven-processing/enumeration.xml"/>
-          <subsection
-            href="d4p-users-guide/map-driven-processing/index-generation.xml"/>
-          <subsection
-            href="d4p-users-guide/map-driven-processing/graphic-map-generation.xml"/>
-        </chapter>
-        <chapter
           href="d4p-users-guide/html2-plugin/html2-toolkit-plugin.xml">
           <subsection
             href="d4p-users-guide/html2-plugin/understanding-html2-transforms.xml">
