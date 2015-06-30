@@ -5,3 +5,6 @@
 [submodule "docs/repo/org.dita4publishers.epub"]
 	path = docs/repo/org.dita4publishers.epub
 	url = https://github.com/dita4publishers/org.dita4publishers.epub.git
+[submodule "docs/repo/org.dita4publishers.common.mapdriven"]
+	path = docs/repo/org.dita4publishers.common.mapdriven
+	url = https://github.com/dita4publishers/org.dita4publishers.common.mapdriven.git
