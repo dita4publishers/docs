@@ -169,25 +169,8 @@
             href="d4p-users-guide/word2dita/transform-parameters.xml"/>
           <subsection
             href="d4p-users-guide/word2dita/word2dita-ant-parameters.xml"/>
-        </chapter>
-        <chapter
-          href="d4p-users-guide/dita2indesign/dita-to-indesign-framework-chapter.xml">
-          <subsection
-            href="d4p-users-guide/dita2indesign/indesign-product-overview.xml"/>
-          <subsection
-            href="d4p-users-guide/dita2indesign/generating-incopy-articles-from-topics.xml"/>
-          <subsection
-            href="d4p-users-guide/dita2indesign/dita-to-indesign-plugin-usage.xml"/>
-          <subsection
-            href="d4p-users-guide/dita2indesign/generating-incopy-articles.xml">
-            <subsection
-              href="d4p-users-guide/dita2indesign/mapping-paragraphs-to-indesign-styles.xml"/>
-            <subsection
-              href="d4p-users-guide/dita2indesign/grouped-style-name-syntax.xml"/>
-          </subsection>
-          <subsection
-            href="d4p-users-guide/dita2indesign/indesign-optimization.xml"/>
         </chapter-->
+        <chapter href="../repo/org.dita4publishers.dita2indesign/dita2indesign/dita2indesign.ditamap" format="ditamap"/>
       </part>
     </pubbody>
     <backmatter>
