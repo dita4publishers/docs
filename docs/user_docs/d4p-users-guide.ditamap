@@ -40,6 +40,7 @@
     </topicmeta>
     <!--keydef keys="language-reference" href="../languageRef/language-reference.ditamap" format="ditamap"/-->
   </keydefs>
+  <mapref href="keys.ditamap"></mapref>
   <publication>
     <covers>
       <epub-cover-graphic
@@ -53,45 +54,26 @@
         href="d4p-users-guide/frontmatter/coverpage.xml"/>
     </covers>
     <frontmatter>
-      <topicref
-        href="d4p-users-guide/topics/about-this-book.xml"/>
-      <topicref
-        href="d4p-users-guide/release-notes/release-notes.xml">
-        <topicref href="d4p-users-guide/release-notes/release-notes-1.0.0.xml"/>
-        <topicref
-          href="d4p-users-guide/release-notes/release-notes-0.9.19.xml"/>
-        <topicref
-          href="d4p-users-guide/release-notes/release-notes-0.9.18.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.16.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.15.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.14.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.13.xml"
-          collection-type="sequence"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.12.xml"
-          collection-type="sequence"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.11.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.10.xml"/>
-        <subsection
-          href="d4p-users-guide/release-notes/release-notes-0.9.9.xml"/>
+      <topicref keyref="d4p-about"/>
+      <topicref keyref="d4p-release-notes">
+        <topicref keyref="d4p-release-notes-1-0-0"/>
+        <topicref keyref="d4p-release-notes-0-9-19"/>
+        <topicref keyref="d4p-release-notes-0-9-18"/>
+        <subsection keyref="d4p-release-notes-0-9-16"/>
+        <subsection keyref="d4p-release-notes-0-9-15"/>
+        <subsection keyref="d4p-release-notes-0-9-14"/>
+        <subsection keyref="d4p-release-notes-0-9-13" collection-type="sequence"/>
+        <subsection keyref="d4p-release-notes-0-9-12" collection-type="sequence"/>
+        <subsection keyref="d4p-release-notes-0-9-11"/>
+        <subsection keyref="d4p-release-notes-0-9-10"/>
+        <subsection keyref="d4p-release-notes-0-9-9"/>
       </topicref>
     </frontmatter>
-    <pubbody
-      class="+ map/topicref pubmap-d/pubbody ">
-      <chapter
-        href="d4p-users-guide/topics/intro-to-d4p.xml"/>
-      <part
-        href="d4p-users-guide/introduction-chapter.xml">
-        <chapter
-          href="d4p-users-guide/tasks/plugin-installation.xml">
-          <subsection
-            href="d4p-users-guide/epub-plugin/setting-up-kindlegen.xml"/>
+    <pubbody>
+      <chapter keyref="d4p-intro"/>
+      <part keyref="d4p-intro-chapter">
+        <chapter keyref="d4p-plugin-installation">
+          <subsection keyref="d4p-kindlegen-installation" />
         </chapter>
         
         <chapter href="../repo/org.dita4publishers.epub/epub-plugin/epub-plugin.ditamap" format="ditamap"/>

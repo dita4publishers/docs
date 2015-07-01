@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- Release Notes -->
+  <keydef keys="d4p-release-notes"  href="d4p-users-guide/release-notes/release-notes.xml"/>
+  <keydef keys="d4p-release-notes-1-0-0"  href="d4p-users-guide/release-notes/release-notes-1.0.0.xml"/>
+  <keydef keys="d4p-release-notes-0-9-19"  href="d4p-users-guide/release-notes/release-notes-0.9.19.xml"/>
+  <keydef keys="d4p-release-notes-0-9-18"  href="d4p-users-guide/release-notes/release-notes-0.9.18.xml"/>
+  <keydef keys="d4p-release-notes-0-9-16"  href="d4p-users-guide/release-notes/release-notes-0.9.16.xml"/>
+  <keydef keys="d4p-release-notes-0-9-15"  href="d4p-users-guide/release-notes/release-notes-0.9.15.xml"/>
+  <keydef keys="d4p-release-notes-0-9-14"  href="d4p-users-guide/release-notes/release-notes-0.9.14.xml"/>
+  <keydef keys="d4p-release-notes-0-9-13"  href="d4p-users-guide/release-notes/release-notes-0.9.13.xml"/>
+  <keydef keys="d4p-release-notes-0-9-12"  href="d4p-users-guide/release-notes/release-notes-0.9.12.xml"/>
+  <keydef keys="d4p-release-notes-0-9-11"  href="d4p-users-guide/release-notes/release-notes-0.9.11.xml"/>
+  <keydef keys="d4p-release-notes-0-9-10"  href="d4p-users-guide/release-notes/release-notes-0.9.10.xml"/>
+  <keydef keys="d4p-release-notes-0-9-9"  href="d4p-users-guide/release-notes/release-notes-0.9.9.xml"/>
+ 
+ <!-- topics -->
+  <keydef keys="d4p-about" href="d4p-users-guide/topics/about-this-book.xml"/>
+  <keydef keys="d4p-intro" href="d4p-users-guide/topics/intro-to-d4p.xml"/>
+  <keydef keys="d4p-intro-chapter" href="d4p-users-guide/introduction-chapter.xml">
+  <keydef keys="d4p-plugin-installation" href="d4p-users-guide/tasks/plugin-installation.xml">
+  <keydef keys="d4p-kindlegen-installation" href="d4p-users-guide/topics/setting-up-kindlegen.xml"/>
+</map>
