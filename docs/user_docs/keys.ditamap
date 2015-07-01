@@ -18,7 +18,8 @@
  <!-- topics -->
   <keydef keys="d4p-about" href="d4p-users-guide/topics/about-this-book.xml"/>
   <keydef keys="d4p-intro" href="d4p-users-guide/topics/intro-to-d4p.xml"/>
-  <keydef keys="d4p-intro-chapter" href="d4p-users-guide/introduction-chapter.xml">
-  <keydef keys="d4p-plugin-installation" href="d4p-users-guide/tasks/plugin-installation.xml">
+  <keydef keys="d4p-intro-chapter" href="d4p-users-guide/introduction-chapter.xml"/>
+  <keydef keys="d4p-plugin-installation" href="d4p-users-guide/tasks/plugin-installation.xml"/>
   <keydef keys="d4p-kindlegen-installation" href="d4p-users-guide/topics/setting-up-kindlegen.xml"/>
+  <keydef keys="d4p-colophon" href="d4p-users-guide/backmatter/colophon.xml"/>
 </map>

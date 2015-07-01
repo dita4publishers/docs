@@ -14,3 +14,6 @@
 [submodule "docs/repo/org.dita4publishers.html5"]
 	path = docs/repo/org.dita4publishers.html5
 	url = https://github.com/dita4publishers/org.dita4publishers.html5.git
+[submodule "docs/repo/org.dita4publishers.dita2indesign"]
+	path = docs/repo/org.dita4publishers.dita2indesign
+	url = https://github.com/dita4publishers/org.dita4publishers.dita2indesign.git

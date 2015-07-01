@@ -191,8 +191,7 @@
       </part>
     </pubbody>
     <backmatter>
-      <topicref
-        href="d4p-users-guide/backmatter/colophon.xml"/>
+      <topicref keyref="d4p-colophon"/>
     </backmatter>
   </publication>
 </pubmap>
