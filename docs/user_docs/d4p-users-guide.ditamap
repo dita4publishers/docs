@@ -85,10 +85,15 @@
         <chapter href="../repo/org.dita4publishers.word2dita/word2dita/word2dita.ditamap" format="ditamap"/>
         <chapter href="../repo/org.dita4publishers.dita2indesign/dita2indesign/dita2indesign.ditamap" format="ditamap"/>
         <chapter href="d4p-users-guide/topics/extending-d4p-plugins.xml"/>
+        
       </part>
+      
+      <part href="../repo/org.dita4publishers.doctypes/doctypes/doctypes.ditamap" format="ditamap"/>
+      
     </pubbody>
   </publication>
 </pubmap>
+
        
       <!--part
         href="d4p-users-guide/vocabulary-part/vocabulary-part.xml">
