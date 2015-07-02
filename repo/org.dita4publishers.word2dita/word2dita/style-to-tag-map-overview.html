@@ -1,0 +1,377 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Style to Tag Mapping</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="schema.DC" href="http://purl.org/dc/terms/"><meta name="DC.Type" content="concept"><meta name="DC.Title" content="Style to Tag Mapping"><meta name="abstract" content="The docx2dita transform is driven by a configuration file, the style-to-tag map. The style-to-tag map enables an entirely or almost-entirely configuration-driven transformation of styled Word documents into DITA-based XML, specialized or not. Through careful design of Word templates it is possible to quickly configure the transformation to produce good XML documents."><meta name="description" content="The docx2dita transform is driven by a configuration file, the style-to-tag map. The style-to-tag map enables an entirely or almost-entirely configuration-driven transformation of styled Word documents into DITA-based XML, specialized or not. Through careful design of Word templates it is possible to quickly configure the transformation to produce good XML documents."><meta name="DC.Relation" scheme="URI" content="../../../user_docs/d4p-users-guide/introduction-chapter.html"><meta name="DC.Relation" scheme="URI" content="../../org.dita4publishers.html5/html5-plugin/html5-toolkit-plugin.html"><meta name="DC.Relation" scheme="URI" content="word2dita-intro.html"><meta name="DC.Relation" scheme="URI" content="word2dita-intro.html"><meta name="DC.Relation" scheme="URI" content="word2dita-from-oxygen.html"><meta name="DC.Relation" scheme="URI" content="common-mapping-cases.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="concept-id"><script type="text/javascript">var d4p = {"relativePath":"..\/..\/..\/","dev":false,"debug":false,"draft":false,"nextTopicHref":"repo\/org.dita4publishers.word2dita\/word2dita\/common-mapping-cases.html","previousTopicHref":"repo\/org.dita4publishers.word2dita\/word2dita\/word2dita-from-oxygen.html","root":false,"topic":{"chunked":""},"map":{"title":"  DITA For Publishers User Guide  ","chunked":false},"search":{"minlength":2},"l":{"searchPageHeading":"Search Results","close":"Close"}}</script><link rel="stylesheet" type="text/css" media="screen, projection" href="../../../themes/dita-d4p-classic/css/style.css"><link rel="stylesheet" type="text/css" media="screen, projection, print" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><script type="text/javascript">
+      
+        d4p.cssGridPath = d4p.dev ? 'html5-themes/modules/960-Responsive-Grid/css/' : 'themes/dita-d4p-classic/css/';
+        var ADAPT_CONFIG = {
+          // Where is your CSS?
+          path: d4p.relativePath + d4p.cssGridPath,
+          
+          // false = Only run once, when page first loads.
+          // true = Change on window resize and page tilt.
+          dynamic: true,
+          
+          // Optional callback... myCallback(i, width)
+          callback: doc_resize,
+          
+          // First range entry is the minimum.
+          // Last range entry is the maximum.
+          // Separate ranges by "to" keyword.
+          range: [
+             // small (size-0)
+            '0px    to 760px  = mobile.css',
+             // medium (size-1, size-2)
+            '760px  to 980px  = 720.css',
+            '980px  to 1270px = 960.css',
+             // large (size-3, size-5)
+            '1270px to 1600px = 1200.css',
+            '1600px to 1940px = 1560.css',
+             // extra large (size-6)
+            '1940px to 2540px = 1920.css',
+            '2540px           = 2520.css'
+          ]
+        };
+
+        function doc_resize(i, width)
+        {
+          d4p.setBodyClassfunction(i, width);
+        }
+
+
+        
+      </script><script type="text/javascript" src="../../../themes/dita-d4p-classic/js/script.js"></script></head><body class="en-us dita-d4p-classic centered navigation-default"><div id="d4h5-main-container" class="container_12" role="application"><ul id="page-links" class="hidden"><li><a id="skip-to-content" href="#d4h5-main-content">Skip to content</a></li><li><a id="skip-to-localnav" href="#local-navigation">Skip to navigation</a></li><li><a id="skip-to-footer" href="#footer">Skip to footer</a></li></ul><header role="banner" aria-labelledby="publication-title" class="hide-for-small"><div class="grid_8"><h1 id="publication-title">  DITA For Publishers User Guide  </h1></div><section class="grid_4 search-box"><form id="search" role="search"><div class="form-group"><input id="search-text" type="text" autocomplete="off" class="form-control" placeholder="Search"></div></form></section><secion class="clearfix"></secion></header><div id="d4h5-section-container" class="grid_12"><nav id="local-navigation" class="grid_4 alpha omega" role="navigation" aria-label="Main navigation"><div id="nav-content"><ul><li><a href="../../../index.html">Table of Contents</a></li><li><a href="../../../user_docs/d4p-users-guide/frontmatter/coverpage.html">DITA For Publishers User Guide</a></li><li><a href="../../../user_docs/d4p-users-guide/topics/about-this-book.html">About This Book</a></li><li class="collapsible collapsed"><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes.html">Release Notes</a><ul><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-1.0.0.html">Release Notes: Version 1.0.0RC00 (github version)</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.19.html">Release Notes: Version 0.9.19RC12</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.18.html">Release Notes: Version 0.9.18</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.16.html">Release Notes: Version 0.9.16</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.15.html">Release Notes: Version 0.9.15</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.14.html">Release Notes: Version 0.9.14</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.13.html">Release Notes: Version 0.9.13</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.12.html">Release Notes: Version 0.9.12</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.11.html">Release Notes: Version 0.9.11</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.10.html">Release Notes: Version 0.9.10</a></li><li><a href="../../../user_docs/d4p-users-guide/release-notes/release-notes-0.9.9.html">Release Notes: Version 0.9.9</a></li></ul></li><li><a href="../../../user_docs/d4p-users-guide/topics/intro-to-d4p.html">Introduction to DITA For Publishers</a></li><li class="collapsible active"><a href="../../../user_docs/d4p-users-guide/introduction-chapter.html"><span class="enumeration enumeration0">Part&nbsp;I. </span>The DITA For Publishers Open Toolkit Plugins</a><ul><li class="collapsible collapsed"><a href="../../../user_docs/d4p-users-guide/tasks/plugin-installation.html">Installing the Toolkit Plugins</a><ul><li><a href="../../../user_docs/d4p-users-guide/topics/setting-up-kindlegen.html">Setting Up The kindlegen Command-Line Utility</a></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.epub/epub-plugin/generating-epubs.html">Generating EPUBs and Kindle Books from DITA Content</a><ul><li><a href="../../org.dita4publishers.epub/epub-plugin/generating-epubs-from-oxygen.html">Generating EPUBs From OxygenXML</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/generating-kindle-books-from-oxygen.html">Generating Kindle Books From OxygenXML</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/using-custom-css.html">Using Custom CSS Style Sheets</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/creating-cover-graphics.html">Creating Cover Graphics and Covers</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/creating-opf-metadata.html">Creating Arbitrary EPUB OPF Metadata</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/overriding-base-processing.html">Implementing Overrides for Common Processing</a></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.epub/epub-plugin/epub-transtype-parameters-ref.html">EPUB and Kindle Transformation Parameters</a><ul><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-argsCssOutputDir.html">args.css.output.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-coverGraphicFile.html">cover.graphic.file Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxNavDepth.html">d4p.max.nav.depth Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-d4pMaxTocDepth.html">d4p.max.toc.depth Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubIncludeAutoRellinks.html">epub.exclude.auto.rellinks Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubPubidUriStub.html">epub.pubid.uri.stub Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-epubTempDir.html">epub.temp.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-imagesOutputDir.html">images.output.dir Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-kindleGenExecutable.html">kindlegen.executable Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicClassSpec.html">title.only.topic.class.spec Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-titleOnlyTopicTitleClassSpec.html">title.only.topic.title.class.spec Ant parameter</a></li><li><a href="../../org.dita4publishers.epub/epub-plugin/reference/ant-parm-topicsOutputDir.html">topics.output.dir Ant parameter</a></li></ul></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.common.mapdriven/map-driven-processing/map-driven-processing.html">Map-Driven Processing</a><ul><li><a href="../../org.dita4publishers.common.mapdriven/map-driven-processing/map-driven-processing.html">Map-Driven Processing</a></li><li><a href="../../org.dita4publishers.common.mapdriven/map-driven-processing/enumeration.html">Numbering Things: Collected Data and Enumeration</a></li><li><a href="../../org.dita4publishers.common.mapdriven/map-driven-processing/index-generation.html">Index Generation</a></li><li><a href="../../org.dita4publishers.common.mapdriven/map-driven-processing/graphic-map-generation.html">Graphic Map Generation</a></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html2/html2-plugin/html2-toolkit-plugin.html">HTML2 Plugin</a><ul><li class="collapsible collapsed"><a href="../../org.dita4publishers.html2/html2-plugin/understanding-html2-transforms.html">Understanding the HTML2 Transformations</a><ul><li><a href="../../org.dita4publishers.html2/html2-plugin/overall-process-flow.html">Overall HTML Generation Process Flow</a></li><li><a href="../../org.dita4publishers.html2/html2-plugin/customizing-enumeration.html">Extending and Customizing Enumeration Processing (Numbering)</a></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html2/html2-plugin/html2-transtype-parameters-ref.html">HTML2 Transformation Parameters</a><ul><li><a href="../../org.dita4publishers.html2/html2-plugin/reference/ant-parm-fileOrganizationStrategy.html">html2.file.organization.strategy Ant parameter</a></li><li><a href="../../org.dita4publishers.html2/html2-plugin/reference/ant-parm-generateDynamicToc.html">html2.generate.dynamic.toc Ant parameter</a></li><li><a href="../../org.dita4publishers.html2/html2-plugin/reference/ant-parm-generateFrameset.html">html2.generate.frameset Ant parameter</a></li><li><a href="../../org.dita4publishers.html2/html2-plugin/reference/ant-parm-generateStaticToc.html">html2.generate.static.toc Ant parameter</a></li></ul></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/html5-toolkit-plugin.html">HTML5 Plugin</a><ul><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/general/html5-getting-started.html">Getting Started With the HTML5 Transformation</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/general/requirements.html">Requirements</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/general/downloading.html">Downloading HTML5 plugin</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/general/install.html">Specific installation notes for developpers</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/general/running.html">Running the HTML5 Plugin</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/general/changed_behavior.html">Changed Behaviours</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/general/licence.html">License</a></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/dev/html5-default-theme.html">The default theme</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/general/setting-an-index.html">Replacing the index.html file</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/muti-columns.html">Multiple columns layout</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/css-grid.html">CSS grid</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/images.html">Image support</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/notes.html">Notes</a></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/how-to/ui-intro.html">UI</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/accordion.html">Accordion</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/ui-images.html">Cycle</a></li></ul></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/general/developpers.html">Developpers</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/dev/customization-plugin.html">Creating a customization plugin</a></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/dev/theme-dev.html">Theme Development</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/dev/theme-general-process.html">The Theme cache process</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/dev/theme-config.html">Theme configuration file: principle</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/dev/theme-config-file.html">Let's explore the configuration file</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/theme-add-conditional-css.html">How to add Internet Explorer conditional css</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/how-to/analytics.html">Adding Google analytics tracking code</a></li></ul></li></ul></li><li class="collapsible collapsed"><a href="../../org.dita4publishers.html5/html5-plugin/references/html5-reference.html">HTML5 Transform Reference</a><ul><li><a href="../../org.dita4publishers.html5/html5-plugin/dev/directory-structure.html">Directory structure</a></li><li><a href="../../org.dita4publishers.html5/html5-plugin/references/ant-properties.html">Availaible ant properties</a></li></ul></li></ul></li><li class="collapsible active"><a href="word2dita-intro.html">The Word-to-DITA Transformation Framework</a><ul><li><a href="w2d-getting-started.html">Getting Started With The Word2DITA Transform</a></li><li class="collapsible collapsed"><a href="word-to-dita-plugin-usage.html">Generating DITA from Word Using the Toolkit Plugin</a><ul><li><a href="word-to-dita-ant-task.html">Setting Up an Ant Script for Running the Word-to-DITA Transform</a></li></ul></li><li><a href="word2dita-from-oxygen.html">Generating DITA From Within OxygenXML</a></li><li class=" active"><a href="style-to-tag-map-overview.html" class=" selected">Style to Tag Mapping</a></li><li><a href="common-mapping-cases.html">Common Style-to-Tag Mapping Cases</a></li><li><a href="troubleshooting-word2dita.html">Troubleshooting the Word-to-DITA Process</a></li><li><a href="word2dita-video-tutorial-01.html">Word-to-DITA Style-to-Tag Mapping Video Tutorial</a></li><li class="collapsible collapsed"><a href="customizing-the-transform.html">Extending and Overriding the Word to DITA Transform</a><ul><li><a href="sample-customization-transform.html">Sample Custom Word-to-DITA XSLT Stylesheet</a></li></ul></li><li><a href="word-usage-tips.html">Tips for Using Word With the Word-to-DITA Transform</a></li><li><a href="transform-parameters.html">Word-to-DITA XSLT Transformation Parameters</a></li><li><a href="word2dita-ant-parameters.html">Word-to-DITA Ant Parameters</a></li></ul></li></ul></li><li><a href="../../../generated-index.html">Index</a></li></ul></div></nav><div id="d4h5-main-content" class="grid_8 alpha omega"><article><nav id="content-toolbar" class="toolbar hide-for-small"><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="../../../user_docs/d4p-users-guide/introduction-chapter.html" title="The DITA For Publishers Open Toolkit Plugins"><span class="fi fi-arrow-up"></span><span class="screen-reader">The DITA For Publishers Open Toolkit Plugins</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="previouslink"><a href="../../org.dita4publishers.html5/html5-plugin/html5-toolkit-plugin.html" title="HTML5 Plugin"><span class="fi fi-arrow-left"></span><span class="screen-reader">HTML5 Plugin</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="nextlink"><a href="word2dita-intro.html" title="The Word-to-DITA Transformation Framework"><span class="fi fi-arrow-right"></span><span class="screen-reader">The Word-to-DITA Transformation Framework</span></a></div></div><div class="familylinks"><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="parentlink"><a href="word2dita-intro.html" title="The Word-to-DITA Transformation Framework"><span class="fi fi-arrow-up"></span><span class="screen-reader">The Word-to-DITA Transformation Framework</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="previouslink"><a href="word2dita-from-oxygen.html" title="Generating DITA From Within OxygenXML"><span class="fi fi-arrow-left"></span><span class="screen-reader">Generating DITA From Within OxygenXML</span></a></div><div xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" class="nextlink"><a href="common-mapping-cases.html" title="Common Style-to-Tag Mapping Cases"><span class="fi fi-arrow-right"></span><span class="screen-reader">Common Style-to-Tag Mapping Cases</span></a></div></div></nav><section id="page"><div class="page concept    topic topic concept concept "><a name="concept-id" id="concept-id" class="anchor"></a>
+  <h1 class="title topictitle1">Style to Tag Mapping</h1>
+  
+  <div class="body conbody"><p class="shortdesc">The docx2dita transform is driven by a configuration file, the style-to-tag map. The
+    style-to-tag map enables an entirely or almost-entirely configuration-driven transformation of
+    styled Word documents into DITA-based XML, specialized or not. Through careful design of Word
+    templates it is possible to quickly configure the transformation to produce good XML
+    documents.</p>
+    <p class="p">The style-to-tag map consists of a sequence of <code>&lt;style&gt;</code> elements, where each
+      style element defines the mapping for a paragraph, character, list, or table style to the
+      appropriate DITA XML structure. The mapping document may also include an initial <code>&lt;documentation&gt;</code> element that can hold documentation in any markup language (its
+      content is ignored and not validated), as well as <code>&lt;output&gt;</code> elements that
+      define the public and system IDs to use for any generated map or topic documents.</p>
+    <div class="p">The basic rules and constraints for the mapping are:<ul class="ul">
+        <li class="li">The result document always consists of a single root topic or map. The first non-skipped
+          and non-root-topic-prolog paragraph in the Word document must be of structure type
+          "topicTitle", "map", or "mapTitle" and level "0" (zero).</li>
+      <li class="li">The @level value on each style determines how the flat sequence of Word paragraphs translates into a hierarchy of maps and topics. You must specify appropriate @level values and you cannot skip levels (you cannot have a level-1 paragraph followed by a level-3 paragraph).</li>
+        <li class="li">Paragraph styles that map to topic titles and contained elements (within topic bodies) must map to exactly one fixed level or specify a relative level value (current level, plus one, or
+        minus one) and a "level group". Most of your styles will map to fixed levels, but things that may occur at many levels and that should always be leveled relative to their context can be
+        defined using relative levels. Examples include topic-creating paragraphs and paragraphs for things that can occur within the topic body or within list items or other contexts.</li>
+        <li class="li">Character style mapping is flat within a paragraph: there is currently no general way to
+          infer multiple levels of inline markup from a flat sequence of character runs (this is
+          more a limitation of Word's character styles than of the mapping mechanism). In theory it
+          would be possible to use marker characters or character styles or, more reliably, embedded
+          XML elements, to capture more complex inline structures.</li>
+        <li class="li">Each mapped style effectively says "I'm this type of structure, I go in this part of the
+          topic, and (if necessary), I'm contained by this containing element." That, plus other
+          details as needed for specific types of target elements, is sufficient to enable accurate
+          creation of DITA XML from appropriately-styled Word documents.</li>
+      <li class="li">Paragraphs that generate topics can also generate maps and topicrefs to those topics. This allows you to generate maps and submaps as well as topics.</li>
+        <li class="li">Common containment is determined by adjacency of similar container types and levels. For
+          example, within a topic body, each sequence of adjacent paragraphs with the same <code>@containerType</code> and <code>@level</code> value will be grouped together within
+          the same result element as determined by the <code>@containerType</code> value.</li>
+      </ul></div>
+    <div class="p">Each style mapping takes the following attributes (see the <span class="ph filepath">style2tagmap/xsd/style2tagmap.xsd</span> schema in the DITA for Publishers doctypes plugin for details):<dl class="dl">
+      
+        <dt class="dt dlterm"><code>@styleName</code></dt>
+        <dd class="dd">(Required unless <code>@styleId</code> is specified) The Word style name. This is the value in the <code>@w:val</code> attribute of the <code>&lt;w:style&gt;</code>/<code>&lt;w:name&gt;</code> element whose <code>@w:styleId</code> value matches the style ID specified by a given paragraph, text run, list item, or table. This is the display name of the style as shown in the various style-related dialogs in Word. The style name is not case sensitive, so "Heading 1" and "heading 1" identify the same style. Note that styles may have associated aliases. Mapping to aliases is not supported as of version 0.9.16.<p class="p">If you specify <code>@styleName</code> you should not specify <code>@styleId</code>. If you specify both then <code>@styleName</code> is used.</p></dd>
+      
+      
+        <dt class="dt dlterm"><code>@styleId</code></dt>
+        <dd class="dd">(Required if <code>@styleName</code> is not specified) The Word style ID. This is the value in the <code>@w:val</code> attribute of the <code>&lt;w:*Style&gt;</code> element associated with given paragraph, text run, list item, or table. Note that this value is not the same as the display name of the style. For example, spaces and underscores in style names are removed to form the style ID. In general, you can construct the style ID for a given style by simply removing all spaces from the style's display name.<p class="p">If you specify <code>@styleId</code> you should not specify <code>@styleName</code>. If both are specified, <code>@styleName</code> is used.</p></dd>
+      
+      
+        <dt class="dt dlterm"><code>@structureType</code></dt>
+        <dd class="dd">(Required) Indicates the type of target structure the Word construct represents. Possible values are:<dl class="dl">
+          
+            <dt class="dt dlterm">topicTitle</dt>
+            <dd class="dd">Paragraphs that start new topics and provide their titles. The style mapping must also indicate the topic type, prolog type, body type, and topic nesting level.</dd>
+          
+          
+            <dt class="dt dlterm">map</dt>
+            <dd class="dd">Paragraphs that start new maps without titles.</dd>
+          
+          
+            <dt class="dt dlterm">mapTitle</dt>
+            <dd class="dd">Paragraphs that start new maps and provide their titles.</dd>
+          
+          
+            <dt class="dt dlterm">topicHead</dt>
+            <dd class="dd">Paragraphs that generate new <code>&lt;topichead&gt;</code> elements in the result map and provide their titles.</dd>
+          
+          
+            <dt class="dt dlterm">topicGroup</dt>
+            <dd class="dd">Paragraphs that generate new <code>&lt;topicgroup&gt;</code> elements in the result map. Topic groups may have titles (and generated topic groups will use the paragraph content as the title) but topic group titles are always ignored in output per the DITA 1.2 specification.</dd>
+          
+          
+            <dt class="dt dlterm">topicmeta</dt>
+            <dd class="dd">Paragraphs that contribute metadata to a map or topicref.</dd>
+          
+          
+            <dt class="dt dlterm">prologData</dt>
+            <dd class="dd">Paragraphs that contribute metadata to the prolog container of a topic..</dd>
+          
+          
+            <dt class="dt dlterm">section</dt>
+            <dd class="dd">Paragraphs that start new sections and, optionally, provide their titles. The style mapping must specify the section tag name and how the section title is determined (<code>@spectitle</code>).</dd>
+          
+          
+            <dt class="dt dlterm">dt</dt>
+            <dd class="dd">A paragraph that is the definition term part of a definition list entry.</dd>
+          
+          
+            <dt class="dt dlterm">dd</dt>
+            <dd class="dd">A paragraph that is the definition description part of a definition list entry. Must immediately follow a "dt" structure type paragraph.</dd>
+          
+          
+            <dt class="dt dlterm">skip</dt>
+            <dd class="dd">The paragraph is completely ignored by the transform. Skipped paragraphs are ignored for the purpose of determining adjacent paragraphs when determining common containers. This means, for example, that a sequence of paragraphs mapped to the same level 1 container, interrupted by a skipped paragraph, and followed by more paragraphs in the same level 1 container will be in a single container instance in the result.</dd>
+          
+          
+            <dt class="dt dlterm">xref</dt>
+            <dd class="dd">Represents a cross reference. Intended to map to <code>&lt;xref&gt;</code> or a specialization of <code>&lt;xref&gt;</code>.</dd>
+          
+          
+            <dt class="dt dlterm">shortdesc</dt>
+            <dd class="dd">A paragraph that serves as the short description for its containing topic.</dd>
+          
+          
+            <dt class="dt dlterm">block</dt>
+            <dd class="dd">Paragraphs that are generic block containers, e.g. DITA paragraphs or similar.</dd>
+          
+          </dl></dd>
+      
+      
+        <dt class="dt dlterm"><code>@secondStructureType</code></dt>
+        <dd class="dd">For paragraphs that generate multiple result elements, the result structure to generate. Mostly used for paragraphs that generate both topics and maps. In this case it doesn't matter whether the map or topic is second structure type, the result will be the same. Possible values are:<dl class="dl">
+          
+            <dt class="dt dlterm">mapTitle</dt>
+            <dd class="dd">Paragraphs that start new maps and provide their titles.</dd>
+          
+          
+            <dt class="dt dlterm">topicTitle</dt>
+            <dd class="dd">Paragraphs that start new topics and provide their titles. The style mapping must also indicate the topic type, prolog type, body type, and topic nesting level.</dd>
+          
+          
+            <dt class="dt dlterm">topicGroup</dt>
+            <dd class="dd">Paragraphs that generate new <code>&lt;topicgroup&gt;</code> elements in the result map. Topic groups may have titles (and generated topic groups will use the paragraph content as the title) but topic group titles are always ignored in output per the DITA 1.2 specification.</dd>
+          
+          
+            <dt class="dt dlterm">topicHead</dt>
+            <dd class="dd">Paragraphs that generate new <code>&lt;topichead&gt;</code> elements in the result map and provide their titles.</dd>
+          
+          
+            <dt class="dt dlterm">section</dt>
+            <dd class="dd">Paragraphs that start new sections and, optionally, provide their titles. The style mapping must specify the section tag name and how the section title is determined (<code>@spectitle</code>).</dd>
+          
+          </dl></dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicZone</code></dt>
+        <dd class="dd">(Optional) Indicates which part of the target topic the result element belongs in. Possible values are:<dl class="dl">
+          
+            <dt class="dt dlterm">title</dt>
+            <dd class="dd">Provides a topic title</dd>
+          
+          
+            <dt class="dt dlterm">titleAlts</dt>
+            <dd class="dd">Provides one or more title alternatives</dd>
+          
+          
+            <dt class="dt dlterm">shortdesc</dt>
+            <dd class="dd">Provides the short description for the topic.</dd>
+          
+          
+            <dt class="dt dlterm">prolog</dt>
+            <dd class="dd">Contributes to the topic prolog.</dd>
+          
+          
+            <dt class="dt dlterm">body</dt>
+            <dd class="dd">Contributes to the topic body as a block-level element.</dd>
+          
+          
+            <dt class="dt dlterm">inline</dt>
+            <dd class="dd">An inline element contained by some other generated element.</dd>
+          
+          
+            <dt class="dt dlterm">topicmeta</dt>
+            <dd class="dd">An element that goes in the topicmeta container of a map or topicref element.</dd>
+          
+          </dl></dd>
+      
+      
+        <dt class="dt dlterm"><code>@containingTopic</code></dt>
+        <dd class="dd">(Optional) Indicates which topic should contain the element: "root" or "current". When <code>@containingTopic</code> is "root", the paragraph will be included in the root topic, regardless of where it occurs within the input Word document. This is intended primarily for prolog components. The default is "current".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@containerType</code></dt>
+        <dd class="dd">(Optional) For components that imply a container, such as list items, specifies the tag name of the containing element, e.g. "ul" for unordered list items. The container type value, along with the <code>@level</code> value, is used to group sequences of adjacent paragraphs together. All adjacent paragraphs with the same <code>@containerType</code> and <code>@level</code> value will be grouped together under a single instance of the specified container.<p class="p">For paragraphs that generate topicrefs, specifying <code>@containerType</code> results in a common containing element for adjacent topicrefs with the same container type (for example, to put the topicrefs into a topic group).</p></dd>
+      
+      
+        <dt class="dt dlterm"><code>@tagName</code></dt>
+        <dd class="dd">(Required) Specifies the XML tag name for the result element generated directly from the Word component.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicType</code></dt>
+        <dd class="dd">(Required when <code>@structureType</code> or <code>@sectionStructureType</code> is "topicTitle"). Specifies the topic element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@mapType</code></dt>
+        <dd class="dd">(Required when <code>@structureType</code> or <code>@sectionStructureType</code> is "mapTitle"). Specifies the map element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@prologType</code></dt>
+        <dd class="dd">(Optional). For topics, specifies the prolog element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@abstractType</code></dt>
+        <dd class="dd">(Optional). For topics, specifies the abstract element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@bodyType</code></dt>
+        <dd class="dd">(Optional). For topics, specifies the body element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@shortdescType</code></dt>
+        <dd class="dd">(Optional). For topics and topicrefs, specifies the body element tag name.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@level</code></dt>
+        <dd class="dd">(Required) Indicates the nesting level for a given topic or other containing structure. Styles within the Word document are always specific to a given nesting level or relative to the level of a preceding paragraph. For structure type "topicTitle", level "0" indicates the root topic for the result document. Note that the level hierarchy for topic- and map-creating paragraphs is distinct from the level hierarchy for paragraphs that contribute to topic bodies (topicZone="body"). For body paragraphs, the level is relative to the body itself. E.g., level="1" would be for first-level list items, level="2" for second-level list items, and so on.<p class="p">The <code>@level</code> value may be a number from 0 to 9 or one of the keywords <span class="keyword">current</span>, <span class="keyword">plusOne</span>, or <span class="keyword">minusOne</span>. When the value is one of the keywords the level is relative. When a relative level is specified, the <code>@levelGroup</code> attribute should also be specified. Adjacent paragraphs with the same <code>@levelGroup</code> value will be leveled relative to the first preceding paragraph with a different (or unspecified) level group. For example, paragraphs that may occur with in the topic body or list items should all use the same level group value.</p></dd>
+      
+      
+        <dt class="dt dlterm"><code>@levelGroup</code></dt>
+        <dd class="dd">(Required if <code>@level</code> is a relative level keyword). Specifies the name of the group to which the paragraph belongs. All adjacent paragraphs in the same level group will determine their level relative to the first preceding paragraph with a different or unspecified level group. If <code>@level</code> is a numeric value, <code>@levelGroup</code> is ignored if specified.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@spectitle</code></dt>
+        <dd class="dd">(Optional) For section structure types, indicates how the section title is constructed. A section-generating paragraph can also provide the section title text for use in a <code>&lt;title&gt;</code> element or the section title can be provided by the paragraph following the section-generating paragraph. The possible values for <code>@spectitle</code> are:<dl class="dl">
+          
+            <dt class="dt dlterm">#toColon</dt>
+            <dd class="dd">The paragraph is expected to have initial text terminated by a colon and whitespace (": "). The section's <code>@spectitle</code> attribute is set to the value of the text up to but not including the colon. The text following the colon and whitespace is used as the first paragraph of the section, if any.</dd>
+          
+          
+            <dt class="dt dlterm">#toEmdash</dt>
+            <dd class="dd">The paragraph is expected to have initial text terminated by an em dash ("—") and optional whitespace. The section's <code>@spectitle</code> attribute is set to the value of the text up to but not including the dash. The text following the dash is used as the first paragraph of the section, if any.</dd>
+          
+          
+            <dt class="dt dlterm">#toPeriod</dt>
+            <dd class="dd">The paragraph is expected to have initial text terminated by a period and whitespace (". "). The section's <code>@spectitle</code> attribute is set to the value of the text up to but not including the period and whitespace. The text following the period is used as the first paragraph of the section, if any.</dd>
+          
+          
+            <dt class="dt dlterm"><em class="ph i">literal text</em></dt>
+            <dd class="dd">The text is used as the value of the section's <code>@spectitle</code> attribute.</dd>
+          
+          </dl></dd>
+      
+      
+        <dt class="dt dlterm"><code>@useContent</code></dt>
+        <dd class="dd">(Optional) Indicates whether all the paragraph's content should be used ("mixed"), only element content should be used ("elementsOnly"), or only the text content, with all text runs included by any mappings ignored ("textOnly"). The "textOnly" value is intended for use in generating attribute values, e.g., values for the <code>@value</code> attribute of <code>&lt;data&gt;</code> elements. When the value is "elementsOnly", only text runs with character styles will be used in the result XML. All other content will be ignored. This is useful for extracting metadata fields from text content where the text itself is not needed in the XML (because it will be generated at rendition time, for example).</dd>
+      
+      
+        <dt class="dt dlterm"><code>@baseClass</code></dt>
+        <dd class="dd">(Optional) Specifies the DITA base class for the element to which the component is mapped, e.g. " topic/data ", " topic/author ", etc. This allows the transform to put the result element in the correct location, especially in topic prologs where elements can only occur in a specific place in the sequence of prolog elements. The value is as for the DITA <code>@class</code> attribute, including leading and trailing whitespace. The values recognized are a function of the specific docx2dita transformation used. In general, values should be the most general DITA-defined classes, but extensions to the base transform may expect or recognize more specialized values. Only needs to be specified for elements that must occur in a specific place within a given topic zone in the result document.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@putValueIn</code></dt>
+        <dd class="dd">(Optional) For components that map to <code>&lt;data&gt;</code> or a specialization of <code>&lt;data&gt;</code>, indicates where to put the data value: the <code>@value</code> attribute ("valueAtt") or content ("content").</dd>
+      
+      
+        <dt class="dt dlterm"><code>@dataName</code></dt>
+        <dd class="dd">(Optional) For components that map to <code>&lt;data&gt;</code> or a specialization of <code>&lt;data&gt;</code>, the value to use for the <code>@name</code> attribute. If not specified, the <code>@name</code> attribute is not constructed in the result document.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@format</code></dt>
+        <dd class="dd">(Required if the style will result in a new topic document) For paragraphs that result in a new topic document, specifies the name of an <code>&lt;output&gt;</code> element that defines the public and system identifier for the result document's document type declaration.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@mapFormat</code></dt>
+        <dd class="dd">(Required if the style will result in a new map document) For paragraphs that result in a new map document, specifies the name of an <code>&lt;output&gt;</code> element that defines the public and system identifier for the result document's document type declaration.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@chunk</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate maps or topicrefs, the value to set on the <code>@chunk</code> attribute in the result, normally "to-content" (indicating that the result navigation branch should be result in a single output "chunk" (e.g., single HTML page).</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicDoc</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate new topics, when set to "yes", indicates that the topic should be output in its own document. When set to "yes", must also specify a value for <code>@format</code>. Note that topic-creating paragraphs will also result in new documents if they also generate a topicref and the topic has no parent topic. When <code>@topicDoc</code> is "yes" and the paragraph is not generating the root topic a topicref to the topic is also generated (which means the root paragraph must generate a map (in addition to a topic if it also generates a topic).</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicrefType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate new documents and specify "yes" for <code>@topicDoc</code>, indicates the element type to use for the reference to the generated topic in the result map. Defaults to "topicref".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topictitleType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate topicrefs, topicheads, or topicgroups, indicates the element type to use for the navigation title element in the result map. Defaults to "navtitle".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicheadType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate topic heads (structure type of "topichead"), indicates the element type to use for the topichead in the result map. Defaults to "topichead".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicgroupType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate topic groups (structure type of "topicgroup"), indicates the element type to use for the topicgroup in the result map. Defaults to "topicgroup".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@maprefType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate map references (structure type of "map" or "mapTitle"), specifies the element type to use for the map reference. Defaults to "mapref". Note that for DITA bookmaps, the mapref type must be the same as the topicref type that would be used to refer to a topic at that location, e.g., "chapter", "part", or "topicref". When the generated topicref type does not set a default value of "ditamap" for the @format attribute, you must also specify the <code>@maprefFormat</code> attribute to a value of "ditamap".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@maprefFormat</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate map references, the value to specify on the @format attribute for the mapref element, normally "ditamap". Must be specified when the generated map reference element does not set "ditamap" as the default value for the <code>@format</code> attribute.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@initialSectionType</code></dt>
+        <dd class="dd">(Optional) For styles that map to topics, indicates the name of a specialization of topic/section to use to contain any paragraphs within the topic that occur before an expliclty-indicated section. If not specified, the topic will not have an initial section. Useful for topic types, such as reference and lcLearningContent, that require all topic body content to be within some form of section.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@outputclass</code></dt>
+        <dd class="dd">(Optional) The <code>@outputclass</code> value to use on the element directly generated from the incoming style (that is, the element specified by the <code>@tagName</code> attribute).</dd>
+      
+      
+        <dt class="dt dlterm"><code>@topicOutputclass</code></dt>
+        <dd class="dd">(Optional) For styles that generate topics, indicates the <code>@outputclass</code> value to use for the generated topic.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@sectionType</code></dt>
+        <dd class="dd">(Optional) For styles that imply the creation of a containing section element, the element type to use.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@useAsTitle</code></dt>
+        <dd class="dd">(Optional) For styles that map to a specialization of topic/section, indicates whether or not the paragraph content should be used as the section title. The default is "yes". If set to "yes", or unspecified, must set a value for <code>@tagName</code>.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@containerOutputclass</code></dt>
+        <dd class="dd">(Optional) For styles that imply the creation of a container element (e.g., list items), specifies the <code>@outputclass</code> value for the container.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@navtitleType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that result in a <code>&lt;topicref&gt;</code> element, specifies the tag name to use for the topicref's navigation title element.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@dlEntryType</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate definition lists, the element type for the definition list container. Defaults to "dl".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@rootTopicrefType</code></dt>
+        <dd class="dd">For paragraphs that generate maps, specifies the element type for the root topicref element to use around all generated topicrefs within the map.</dd>
+      
+      
+        <dt class="dt dlterm"><code>@collection-type</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate topicrefs, the value to use for the DITA @collection-type attribute (e.g. "sequence").</dd>
+      
+      
+        <dt class="dt dlterm"><code>@processing-role</code></dt>
+        <dd class="dd">(Optional) For paragraphs that generate topicrefs, the value to use for the DITA @processing-role attribute. Use this to set the processing role to "resource-only" for topicref types that do not already specify a default of "resource-only".</dd>
+      
+      
+        <dt class="dt dlterm"><code>@idGenerator</code></dt>
+        <dd class="dd">For elements that should have an ID generated, the name of the ID generator to use. The default value is "default", where the default ID generator may be result element type specific (e.g., topics may have a different default ID generator than list items).<p class="p">The set of available ID generators is determined by any local overrides used. The ID generator name is passed as a parameter to the apply-templates call for the mode "generate-id" applied to the incoming element.</p><p class="p">Elements that DITA rules require to have an ID will use the "default" ID generator by default, so it is not necessary to specify this attribute for elements that have a required ID except to change the ID generator (e.g., styles that map to topics).</p><p class="p">For elements for which IDs are optional, specify this attribute with a value of "default" to get IDs using the default generator. Specify a different generator name to use that generator.</p></dd>
+      
+      </dl></div>
+  </div>
+<div class="related-links"></div>
+<footer id="topicsNPLinks"><div id="footer_previous"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../repo/org.dita4publishers.word2dita/word2dita/word2dita-from-oxygen.html" class="previous" rel="internal">Generating DITA From Within OxygenXML</a></div><div id="footer_next"><a xmlns:htmlutil="http://dita4publishers.org/functions/htmlutil" href="../../../repo/org.dita4publishers.word2dita/word2dita/common-mapping-cases.html" class="next" rel="internal">Common Style-to-Tag Mapping Cases</a></div></footer></div></section></article><div class="clear"></div></div><div class="clearfix"></div></div><div class="clearfix"></div><div id="footer-container" class="grid_12"></div></div></body></html>
