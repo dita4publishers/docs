@@ -81,16 +81,14 @@
         <chapter href="../repo/org.dita4publishers.html2/html2-plugin/html2-plugin.ditamap" format="ditamap"/>
         <chapter href="../repo/org.dita4publishers.html5/html5-plugin/html5-plugin.ditamap" format="ditamap"/>
         <chapter href="../repo/org.dita4publishers.word2dita/word2dita/word2dita.ditamap" format="ditamap"/>
+        <chapter href="../repo/org.dita4publishers.dita2indesign/dita2indesign/dita2indesign.ditamap" format="ditamap"/>
+        <chapter href="d4p-users-guide/topics/extending-d4p-plugins.xml"/>
       </part>
     </pubbody>
   </publication>
 </pubmap>
-        <!--chapter
-          href="d4p-users-guide/word2dita/word-to-dita-plugin.xml"/>
-        <chapter
-          href="d4p-users-guide/topics/extending-d4p-plugins.xml"/>
-      </part>
-      <part
+       
+      <!--part
         href="d4p-users-guide/vocabulary-part/vocabulary-part.xml">
         <chapter
           href="d4p-users-guide/vocabulary-part/d4p-vocabulary-concepts.xml">
@@ -141,7 +139,7 @@
       <part
         href="d4p-users-guide/transform-frameworks-part/transform-frameworks-part.xml">
        
-        <chapter href="../repo/org.dita4publishers.dita2indesign/dita2indesign/dita2indesign.ditamap" format="ditamap"/>
+        
       </part>
     </pubbody>
     <backmatter>
