@@ -20,3 +20,6 @@
 [submodule "docs/repo/org.dita4publishers.word2dita"]
 	path = docs/repo/org.dita4publishers.word2dita
 	url = https://github.com/dita4publishers/org.dita4publishers.word2dita.git
+[submodule "docs/repo/org.dita4publishers.doctypes"]
+	path = docs/repo/org.dita4publishers.doctypes
+	url = git@github.com:dita4publishers/org.dita4publishers.doctypes.git
