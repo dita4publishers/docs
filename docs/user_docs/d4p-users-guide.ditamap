@@ -69,7 +69,7 @@
         <subsection keyref="d4p-release-notes-0-9-9"/>
       </topicref>
     </frontmatter>
-    <pubbody>
+    <pubbody class=" - map/topicref ">
       <chapter keyref="d4p-intro"/>
       <part keyref="d4p-intro-chapter">
         <chapter keyref="d4p-plugin-installation">
@@ -136,40 +136,7 @@
       </part>
       <part
         href="d4p-users-guide/transform-frameworks-part/transform-frameworks-part.xml">
-        <chapter
-          href="d4p-users-guide/word2dita/word2dita-intro.xml">
-          <subsection
-            href="d4p-users-guide/word2dita/w2d-getting-started.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/word-to-dita-plugin-usage.xml">
-            <subsection
-              href="d4p-users-guide/word2dita/word-to-dita-ant-task.xml"/>
-          </subsection>
-          <subsection
-            href="docx2dita_guide_and_reference/word2dita-from-oxygen.xml"/>
-          <subsection
-            href="docx2dita_guide_and_reference/style-to-tag-map-overview.xml"
-            format="dita"
-            scope="local"
-            collection-type="sequence"/>
-          <subsection
-            href="d4p-users-guide/word2dita/common-mapping-cases.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/troubleshooting-word2dita.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/word2dita-video-tutorial-01.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/customizing-the-transform.xml">
-            <subsection
-              href="d4p-users-guide/word2dita/sample-customization-transform.xml"/>
-          </subsection>
-          <subsection
-            href="d4p-users-guide/word2dita/word-usage-tips.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/transform-parameters.xml"/>
-          <subsection
-            href="d4p-users-guide/word2dita/word2dita-ant-parameters.xml"/>
-        </chapter-->
+       
         <chapter href="../repo/org.dita4publishers.dita2indesign/dita2indesign/dita2indesign.ditamap" format="ditamap"/>
       </part>
     </pubbody>

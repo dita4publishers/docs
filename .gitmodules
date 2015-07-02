@@ -17,3 +17,6 @@
 [submodule "docs/repo/org.dita4publishers.dita2indesign"]
 	path = docs/repo/org.dita4publishers.dita2indesign
 	url = https://github.com/dita4publishers/org.dita4publishers.dita2indesign.git
+[submodule "docs/repo/org.dita4publishers.word2dita"]
+	path = docs/repo/org.dita4publishers.word2dita
+	url = https://github.com/dita4publishers/org.dita4publishers.word2dita.git
